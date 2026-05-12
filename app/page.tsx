@@ -13,7 +13,6 @@ const journeyStories = [
     image: '/hero-maldives.jpg',
     destination: 'Europe & Asia',
     duration: '14 days',
-    price: '$16,500',
   },
   {
     id: 2,
@@ -22,7 +21,6 @@ const journeyStories = [
     image: '/kenya-safari.jpg',
     destination: 'Kenya & Tanzania',
     duration: '10 days',
-    price: '$14,200',
   },
   {
     id: 3,
@@ -31,7 +29,6 @@ const journeyStories = [
     image: '/swiss-alps.jpg',
     destination: 'Switzerland',
     duration: '8 days',
-    price: '$13,800',
   },
 ]
 
@@ -83,8 +80,8 @@ const testimonials = [
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  const handleBooking = (title: string, price: string) => {
-    window.location.href = `/contact?package=${encodeURIComponent(title)}&price=${price}`
+  const handleBooking = (title: string) => {
+    window.location.href = `/contact?package=${encodeURIComponent(title)}`
   }
 
   return (
@@ -93,7 +90,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-serif font-bold text-amber-600 animate-fade-in-down">
-            GARYPARROTBEACH
+            Parrotbeach
           </Link>
           
           <div className="hidden md:flex gap-8 items-center">
@@ -141,7 +138,7 @@ export default function Home() {
         )}
       </nav>
 
-      {/* Hero Section - Interactive & Animated */}
+      {/* Hero Section */}
       <section className="relative pt-28 pb-20 px-6 min-h-screen bg-gradient-to-br from-gray-900 via-amber-900 to-gray-900 text-white overflow-hidden flex items-center">
         {/* Animated background elements */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{ animationDelay: '0s' }}></div>
@@ -153,11 +150,11 @@ export default function Home() {
             {/* Badge */}
             <div className="inline-block mb-8 animate-slide-up">
               <span className="text-amber-300 text-sm font-bold uppercase tracking-widest px-4 py-2 border border-amber-400/30 rounded-full bg-amber-900/30 backdrop-blur">
-                Established 2005 | 19+ Years of Excellence
+                LUXURY TRAVEL EXCELLENCE
               </span>
             </div>
 
-            {/* Main Heading with gradient and animation */}
+            {/* Main Heading */}
             <h1 className="text-6xl lg:text-8xl font-serif font-bold mb-8 leading-tight">
               <span className="inline-block animate-fade-in-up" style={{ animationDelay: '100ms' }}>
                 Travel
@@ -176,12 +173,12 @@ export default function Home() {
               It&apos;s about how you <span className="text-amber-400">feel.</span>
             </h2>
 
-            {/* Description with smooth fade */}
+            {/* Description */}
             <p className="text-lg lg:text-xl text-gray-100 max-w-3xl mb-12 leading-relaxed font-light animate-fade-in-up" style={{ animationDelay: '500ms' }}>
-              For nearly two decades, we&apos;ve crafted transformative journeys for those who understand that luxury transcends material comforts. It&apos;s about intentional moments, profound connections, and the soul-stirring transformation that comes from stepping into the extraordinary.
+              We craft transformative journeys for those who understand that luxury transcends material comforts. It&apos;s about intentional moments, profound connections, and the soul-stirring transformation that comes from stepping into the extraordinary.
             </p>
 
-            {/* CTA Buttons with enhanced styling */}
+            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '600ms' }}>
               <Link
                 href="/contact"
@@ -282,9 +279,9 @@ export default function Home() {
                       {story.duration}
                     </span>
                   </div>
-                  <p className="text-amber-600 font-bold text-lg">{story.price}</p>
+                  {/* Price removed */}
                   <button
-                    onClick={() => handleBooking(story.title, story.price)}
+                    onClick={() => handleBooking(story.title)}
                     className="w-full bg-gray-900 text-white py-3 rounded-lg hover:bg-amber-600 transition-all duration-300 font-semibold hover:shadow-lg hover:translate-y-[-2px]"
                   >
                     Inquire About This Journey
@@ -378,13 +375,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Stats Section – updated with general phrasing */}
       <section className="py-20 px-6 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             {[
               { number: '100+', label: 'Destinations Worldwide' },
-              { number: '19+', label: 'Years of Excellence' },
+              { number: 'Years of', label: 'Excellence' },
               { number: '5000+', label: 'Journeys Curated' },
               { number: '24/7', label: 'Concierge Support' },
             ].map((stat, idx) => (
@@ -418,7 +415,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div className="animate-fade-in-up">
-              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">GARYPARROTBEACH</h3>
+              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">Parrotbeach</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Luxury travel experiences for those who understand that travel transforms the soul.</p>
             </div>
             <div className="animate-fade-in-up" style={{ animationDelay: '50ms' }}>
@@ -426,26 +423,29 @@ export default function Home() {
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li><Link href="/destinations" className="hover:text-amber-500 transition-colors duration-300">Destinations</Link></li>
                 <li><Link href="/experiences" className="hover:text-amber-500 transition-colors duration-300">Experiences</Link></li>
-                <li><Link href="/about" className="hover:text-amber-500 transition-colors duration-300">About Us</Link></li>
+                <li><Link href="/services" className="hover:text-amber-500 transition-colors duration-300">Services</Link></li>
               </ul>
             </div>
             <div className="animate-fade-in-up" style={{ animationDelay: '100ms' }}>
-              <h4 className="font-semibold mb-4 text-white">Services</h4>
+              <h4 className="font-semibold mb-4 text-white">Company</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="#" className="hover:text-amber-500 transition-colors duration-300">Luxury Tours</a></li>
-                <li><a href="#" className="hover:text-amber-500 transition-colors duration-300">Private Jets</a></li>
-                <li><a href="#" className="hover:text-amber-500 transition-colors duration-300">Yacht Charters</a></li>
+                <li><Link href="/about" className="hover:text-amber-500 transition-colors duration-300">About Us</Link></li>
+                <li><Link href="/faq" className="hover:text-amber-500 transition-colors duration-300">FAQ</Link></li>
+                <li><Link href="/contact" className="hover:text-amber-500 transition-colors duration-300">Contact</Link></li>
               </ul>
             </div>
             <div className="animate-fade-in-up" style={{ animationDelay: '150ms' }}>
               <h4 className="font-semibold mb-4 text-white">Contact</h4>
-              <p className="text-amber-500 font-semibold mb-2">+1 (800) TRAVEL-1</p>
-              <p className="text-gray-400 text-sm mb-1">24/7 Luxury Concierge</p>
-              <p className="text-gray-400 text-sm">info@garyparrotbeach.com</p>
+              <p className="text-gray-400 text-sm">Gary Seitz</p>
+              <p className="text-gray-400 text-sm">13 Green Apple Ct</p>
+              <p className="text-gray-400 text-sm">Sparta, NJ 07871</p>
+              <p className="text-amber-500 font-semibold mt-2">Mobile: 973-687-0899</p>
+              <p className="text-amber-500 font-semibold">Landline: 973-729-9335</p>
+              <p className="text-gray-400 text-sm mt-2">T. Lee Productions</p>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 GARYPARROTBEACH. All rights reserved.</p>
+            <p>&copy; 2026 Parrotbeach. All rights reserved.</p>
           </div>
         </div>
       </footer>

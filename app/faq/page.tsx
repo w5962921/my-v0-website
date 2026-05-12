@@ -12,7 +12,7 @@ const faqCategories = [
     faqs: [
       {
         q: 'How far in advance should I book my luxury travel experience?',
-        a: 'We recommend booking 2-3 months in advance for standard experiences and 3-6 months for bespoke journeys. This allows our consultants ample time to curate the perfect itinerary and secure exclusive access to premium venues and experiences. For last-minute bookings, contact us directly at +1 (800) TRAVEL-1.'
+        a: 'We recommend booking 2-3 months in advance for standard experiences and 3-6 months for bespoke journeys. This allows our consultants ample time to curate the perfect itinerary and secure exclusive access to premium venues and experiences. For last-minute bookings, contact us directly at +1 (973) 687-0899.'
       },
       {
         q: 'Can you customize experiences to match my specific preferences?',
@@ -173,7 +173,7 @@ export default function FAQ() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-serif font-bold text-amber-600">
-            GARYPARROTBEACH
+            Parrotbeach
           </Link>
           <div className="hidden md:flex gap-8 items-center">
             <Link href="/destinations" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition">
@@ -343,10 +343,16 @@ export default function FAQ() {
               Contact Our Team
             </Link>
             <a
-              href="tel:+1-800-TRAVEL-1"
+              href="tel:+19736870899"
               className="px-8 py-4 border-2 border-amber-600 text-amber-600 rounded-lg font-bold hover:bg-amber-50 transition"
             >
-              Call +1 (800) TRAVEL-1
+              Call Mobile: 973-687-0899
+            </a>
+            <a
+              href="tel:+19737299335"
+              className="px-8 py-4 border-2 border-amber-600 text-amber-600 rounded-lg font-bold hover:bg-amber-50 transition"
+            >
+              Landline: 973-729-9335
             </a>
           </div>
         </div>
@@ -357,7 +363,7 @@ export default function FAQ() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
-              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">GARYPARROTBEACH</h3>
+              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">Parrotbeach</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Luxury travel experiences for discerning travelers.</p>
             </div>
             <div>
@@ -378,12 +384,16 @@ export default function FAQ() {
             </div>
             <div>
               <h4 className="font-semibold mb-4 text-white">Contact</h4>
-              <p className="text-amber-500 font-semibold mb-2">+1 (800) TRAVEL-1</p>
-              <p className="text-gray-400 text-sm">24/7 Luxury Concierge</p>
+              <p className="text-gray-400 text-sm">Gary Seitz</p>
+              <p className="text-gray-400 text-sm">13 Green Apple Ct</p>
+              <p className="text-gray-400 text-sm">Sparta, NJ 07871</p>
+              <p className="text-amber-500 font-semibold mt-2">Mobile: 973-687-0899</p>
+              <p className="text-amber-500 font-semibold">Landline: 973-729-9335</p>
+              <p className="text-gray-400 text-sm mt-2">T. Lee Productions</p>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 GARYPARROTBEACH. All rights reserved.</p>
+            <p>&copy; 2026 Parrotbeach. All rights reserved.</p>
           </div>
         </div>
       </footer>

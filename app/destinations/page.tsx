@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
-import { MapPin, Star, Users2, DollarSign, ArrowRight, Thermometer, Utensils, Hotel } from 'lucide-react'
+import { Star, ArrowRight, Thermometer, Utensils, Hotel } from 'lucide-react'
 import AnimatedHero from '@/components/animated-hero'
 
 const allDestinations = [
@@ -13,7 +13,6 @@ const allDestinations = [
     region: 'Asia-Pacific',
     image: '/maldives.jpg',
     rating: 4.9,
-    price: 'From $8,500',
     duration: '5-7 days',
     description: 'Tropical paradise with overwater bungalows, world-class diving, and pristine white-sand beaches. Crystal-clear lagoons, vibrant coral reefs, and exclusive island resorts define this ultimate luxury destination.',
     highlights: ['Overwater Bungalows', 'Snorkeling & Diving', 'Private Island Access', 'Sunset Cruises', 'Water Sports', 'Spa & Wellness'],
@@ -28,7 +27,6 @@ const allDestinations = [
     region: 'Europe',
     image: '/swiss-alps-luxury.jpg',
     rating: 4.95,
-    price: 'From $10,500',
     duration: '6-8 days',
     description: 'Snow-capped peaks, luxury alpine chalets, and world-class skiing. Experience breathtaking mountain vistas, charming Swiss villages, and Michelin-starred dining in a pristine alpine setting.',
     highlights: ['Luxury Chalets', 'Skiing & Snowboarding', 'Mountain Hiking', 'Spa Treatments', 'Fine Dining', 'Wine Tasting'],
@@ -43,7 +41,6 @@ const allDestinations = [
     region: 'Africa',
     image: '/kenya-safari-luxury.jpg',
     rating: 4.92,
-    price: 'From $7,500',
     duration: '5-8 days',
     description: 'World-renowned safari destination featuring the Masai Mara, the Big Five, and the annual great migration. Experience authentic African wildlife, Maasai culture, and luxury conservation lodges.',
     highlights: ['Game Drives', 'Big Five Encounters', 'Maasai Villages', 'Bush Dinners', 'Wildlife Photography', 'Conservation Projects'],
@@ -58,7 +55,6 @@ const allDestinations = [
     region: 'Europe',
     image: '/french-riviera-luxury.jpg',
     rating: 4.96,
-    price: 'From $11,500',
     duration: '6-9 days',
     description: 'Côte d\'Azur glamour with exclusive yacht charters, Michelin-starred restaurants, and private beach clubs. Experience Mediterranean elegance from Cannes to Monaco.',
     highlights: ['Yacht Charter', 'Michelin-Starred Dining', 'Exclusive Beach Clubs', 'Monaco Visit', 'Wine Tasting', 'Fashion District'],
@@ -73,7 +69,6 @@ const allDestinations = [
     region: 'Europe',
     image: '/iceland-luxury.jpg',
     rating: 4.88,
-    price: 'From $9,200',
     duration: '7-10 days',
     description: 'Land of fire and ice with otherworldly landscapes. Experience stunning waterfalls, geothermal hot springs, black sand beaches, and the magical Northern Lights in luxury Icelandic retreats.',
     highlights: ['Golden Circle', 'Northern Lights', 'Blue Lagoon', 'Glacier Hiking', 'Waterfall Tours', 'Luxury Lodges'],
@@ -88,7 +83,6 @@ const allDestinations = [
     region: 'Asia-Pacific',
     image: '/japan-luxury.jpg',
     rating: 4.93,
-    price: 'From $8,900',
     duration: '10-14 days',
     description: 'Ancient temples, cutting-edge cities, and breathtaking natural beauty. From Kyoto\'s geisha districts to Tokyo\'s innovation, experience the perfect blend of tradition and modernity in Japan\'s luxury experiences.',
     highlights: ['Temple Stays', 'Geisha Districts', 'Mount Fuji Views', 'Tea Ceremonies', 'Zen Gardens', 'Michelin Dining'],
@@ -103,7 +97,6 @@ const allDestinations = [
     region: 'South America',
     image: '/patagonia-luxury.jpg',
     rating: 4.91,
-    price: 'From $10,200',
     duration: '8-12 days',
     description: 'Southern Hemisphere\'s most dramatic landscapes featuring towering granite peaks, pristine glaciers, and untamed wilderness. Hike ancient ice fields and kayak fjords in secluded mountain lodges.',
     highlights: ['Glacier Trekking', 'Monte Fitz Roy', 'Fjord Kayaking', 'Wildlife Viewing', 'Mountain Hiking', 'Estancia Stays'],
@@ -118,7 +111,6 @@ const allDestinations = [
     region: 'Europe',
     image: '/greece-luxury.jpg',
     rating: 4.94,
-    price: 'From $7,800',
     duration: '7-10 days',
     description: 'Mediterranean islands with ancient history and pristine beaches. Explore Santorini\'s sunset views, Mykonos\' vibrant nightlife, and the Aegean\'s hidden islands with exclusive yacht charters and private villas.',
     highlights: ['Island Hopping', 'Yacht Charters', 'Ancient Ruins', 'Wine Tasting', 'Beach Clubs', 'Sunset Views'],
@@ -133,7 +125,6 @@ const allDestinations = [
     region: 'Asia-Pacific',
     image: '/australia-luxury.jpg',
     rating: 4.87,
-    price: 'From $12,500',
     duration: '12-15 days',
     description: 'From the Great Barrier Reef to the Outback. Experience world-class diving, Aboriginal culture, luxury Australian wine regions, and urban sophistication in Sydney and Melbourne.',
     highlights: ['Great Barrier Reef', 'Outback Safari', 'Aboriginal Culture', 'Wine Country', 'Sydney Opera House', 'Beach Clubs'],
@@ -148,7 +139,6 @@ const allDestinations = [
     region: 'Africa',
     image: '/morocco-luxury.jpg',
     rating: 4.89,
-    price: 'From $6,500',
     duration: '6-9 days',
     description: 'Ancient medinas, Sahara desert camps, and Atlas Mountains. Immerse yourself in Berber culture, indulge in hammams, and experience authentic Moroccan hospitality in luxury riads and desert camps.',
     highlights: ['Sahara Camps', 'Atlas Mountains', 'Medina Markets', 'Hammams', 'Berber Culture', 'Camel Trekking'],
@@ -163,7 +153,6 @@ const allDestinations = [
     region: 'Africa',
     image: '/kenya-safari.jpg',
     rating: 4.90,
-    price: 'From $8,200',
     duration: '7-10 days',
     description: 'Land of pharaohs and timeless wonders. Explore the Pyramids, cruise the Nile River, visit temples of Luxor, and experience ancient Egyptian culture from luxury cruise ships and exclusive resort stays.',
     highlights: ['Pyramids & Sphinx', 'Nile Cruise', 'Luxor Temples', 'Cairo Museum', 'Aswan Beauty', 'Hot Air Balloons'],
@@ -178,7 +167,6 @@ const allDestinations = [
     region: 'Asia-Pacific',
     image: '/french-riviera.jpg',
     rating: 4.86,
-    price: 'From $5,800',
     duration: '6-9 days',
     description: 'Tropical island blending spirituality, culture, and beach luxury. Experience Balinese temples, terraced rice paddies, world-class spas, and world-class beaches with boutique villas and exclusive resorts.',
     highlights: ['Temple Stays', 'Rice Terraces', 'Spa Retreats', 'Beach Clubs', 'Yoga & Wellness', 'Local Markets'],
@@ -198,8 +186,8 @@ export default function DestinationsPage() {
     setDisplayCount(prev => Math.min(prev + 4, allDestinations.length))
   }
 
-  const handleBooking = (name: string, price: string) => {
-    window.location.href = `/contact?package=${encodeURIComponent(name)}&price=${price}`
+  const handleBooking = (name: string) => {
+    window.location.href = `/contact?package=${encodeURIComponent(name)}`
   }
 
   return (
@@ -208,7 +196,7 @@ export default function DestinationsPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-serif font-bold text-amber-600">
-            GARYPARROTBEACH
+            Parrotbeach
           </Link>
           <div className="hidden md:flex gap-8 items-center">
             <Link href="/destinations" className="text-sm font-medium text-amber-600">
@@ -287,15 +275,11 @@ export default function DestinationsPage() {
                     <p className="text-gray-600 leading-relaxed text-lg mb-6">{dest.description}</p>
                   </div>
 
-                  {/* Practical Info */}
-                  <div className="grid grid-cols-3 gap-4 mb-8 pb-8 border-b border-gray-200">
+                  {/* Practical Info – climate moved to where the price section was (second column) */}
+                  <div className="grid grid-cols-2 gap-4 mb-8 pb-8 border-b border-gray-200">
                     <div className="animate-fade-in-up" style={{ animationDelay: '100ms' }}>
                       <p className="text-xs text-gray-500 uppercase font-bold mb-2">Duration</p>
                       <p className="text-lg font-bold text-gray-900">{dest.duration}</p>
-                    </div>
-                    <div className="animate-fade-in-up" style={{ animationDelay: '150ms' }}>
-                      <p className="text-xs text-gray-500 uppercase font-bold mb-2">Price Range</p>
-                      <p className="text-lg font-bold text-amber-600">{dest.price}</p>
                     </div>
                     <div className="animate-fade-in-up" style={{ animationDelay: '200ms' }}>
                       <p className="text-xs text-gray-500 uppercase font-bold mb-2">Climate</p>
@@ -347,9 +331,9 @@ export default function DestinationsPage() {
                     </div>
                   </div>
 
-                  {/* CTA */}
+                  {/* CTA - removed price */}
                   <button
-                    onClick={() => handleBooking(dest.name, dest.price)}
+                    onClick={() => handleBooking(dest.name)}
                     className="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-600 transition-all duration-300 inline-flex items-center gap-2 hover:shadow-lg hover:scale-105 group"
                   >
                     Inquire About {dest.name} <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
@@ -393,38 +377,42 @@ export default function DestinationsPage() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer – now includes a Company section with FAQ link and the exact contact details you asked for */}
       <footer className="bg-gray-900 text-white py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div className="animate-fade-in-up">
-              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">GARYPARROTBEACH</h3>
+              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">Parrotbeach</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Luxury travel experiences for discerning travelers.</p>
             </div>
             <div className="animate-fade-in-up" style={{ animationDelay: '50ms' }}>
               <h4 className="font-semibold mb-4 text-white">Discover</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><Link href="/destinations" className="hover:text-amber-500 transition-colors duration-300">Destinations</Link></li>
-                <li><Link href="/experiences" className="hover:text-amber-500 transition-colors duration-300">Experiences</Link></li>
-                <li><Link href="/about" className="hover:text-amber-500 transition-colors duration-300">About Us</Link></li>
+                <li><Link href="/destinations" className="hover:text-amber-500 transition-colors">Destinations</Link></li>
+                <li><Link href="/experiences" className="hover:text-amber-500 transition-colors">Experiences</Link></li>
+                <li><Link href="/services" className="hover:text-amber-500 transition-colors">Services</Link></li>
               </ul>
             </div>
             <div className="animate-fade-in-up" style={{ animationDelay: '100ms' }}>
-              <h4 className="font-semibold mb-4 text-white">Services</h4>
+              <h4 className="font-semibold mb-4 text-white">Company</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="#" className="hover:text-amber-500 transition-colors duration-300">Luxury Tours</a></li>
-                <li><a href="#" className="hover:text-amber-500 transition-colors duration-300">Private Jets</a></li>
-                <li><a href="#" className="hover:text-amber-500 transition-colors duration-300">Yacht Charters</a></li>
+                <li><Link href="/about" className="hover:text-amber-500 transition-colors">About Us</Link></li>
+                <li><Link href="/faq" className="hover:text-amber-500 transition-colors">FAQ</Link></li>
+                <li><Link href="/contact" className="hover:text-amber-500 transition-colors">Contact</Link></li>
               </ul>
             </div>
             <div className="animate-fade-in-up" style={{ animationDelay: '150ms' }}>
               <h4 className="font-semibold mb-4 text-white">Contact</h4>
-              <p className="text-amber-500 font-semibold mb-2">+1 (800) TRAVEL-1</p>
-              <p className="text-gray-400 text-sm">24/7 Luxury Concierge</p>
+              <p className="text-gray-400 text-sm">Gary Seitz</p>
+              <p className="text-gray-400 text-sm">13 Green Apple Ct</p>
+              <p className="text-gray-400 text-sm">Sparta, NJ 07871</p>
+              <p className="text-amber-500 font-semibold mt-2">Mobile: 973-687-0899</p>
+              <p className="text-amber-500 font-semibold">Landline: 973-729-9335</p>
+              <p className="text-gray-400 text-sm mt-2">T. Lee Productions</p>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 GARYPARROTBEACH. All rights reserved.</p>
+            <p>&copy; 2026 Parrotbeach. All rights reserved.</p>
           </div>
         </div>
       </footer>

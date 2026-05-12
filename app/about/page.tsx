@@ -33,7 +33,7 @@ const team = [
 ]
 
 const stats = [
-  { number: '2005', label: 'Year Founded', icon: Globe },
+  { number: '19+', label: 'Years of Excellence', icon: Globe },
   { number: '100+', label: 'Destinations', icon: Globe },
   { number: '1000+', label: 'Vetted Partners', icon: Users },
   { number: '98%', label: 'Client Satisfaction', icon: Heart }
@@ -69,7 +69,7 @@ export default function About() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-serif font-bold text-amber-600">
-            GARYPARROTBEACH
+            Parrotbeach
           </Link>
           <div className="hidden md:flex gap-8 items-center">
             <Link href="/destinations" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition">
@@ -93,10 +93,10 @@ export default function About() {
 
       {/* Hero */}
       <AnimatedHero
-        badge="SINCE 2005 | LUXURY EXCELLENCE"
-        title="About GARYPARROTBEACH"
+        badge="LUXURY TRAVEL EXPERTS"
+        title="About Parrotbeach"
         subtitle="redefining luxury travel"
-        description="We craft bespoke journeys for discerning travelers who seek authenticity, expertise, and uncompromising quality. With 19 years of excellence, we connect you genuinely with the world's most remarkable destinations."
+        description="We craft bespoke journeys for discerning travelers who seek authenticity, expertise, and uncompromising quality. With decades of excellence, we connect you genuinely with the world's most remarkable destinations."
         backgroundGradient="bg-gradient-to-br from-gray-900 via-amber-900 to-gray-900"
         primaryCTA={{
           text: 'Our Values',
@@ -108,7 +108,7 @@ export default function About() {
         }}
         showTrustIndicators={true}
         trustStats={[
-          { value: '19', label: 'Years Leading' },
+          { value: 'Years of', label: 'Excellence' },
           { value: '100+', label: 'Destinations' },
           { value: '98%', label: 'Satisfaction' },
         ]}
@@ -120,16 +120,16 @@ export default function About() {
           <h2 className="text-4xl font-serif font-bold mb-8 text-gray-900">Our Story</h2>
           <div className="prose prose-lg text-gray-700 space-y-6 leading-relaxed">
             <p>
-              Founded in 2005, GARYPARROTBEACH emerged from a simple belief: travel is not transactional. It&apos;s transformational. What started as a boutique luxury travel planning service has evolved into a globally recognized pioneer of bespoke, intentional journeys.
+              Parrotbeach emerged from a simple belief: travel is not transactional. It&apos;s transformational. What started as a boutique luxury travel planning service has evolved into a globally recognized pioneer of bespoke, intentional journeys.
             </p>
             <p>
-              Our founders recognized that affluent travelers were tired of templated itineraries and cookie-cutter experiences. They wanted authentic connections with destinations, expert guidance tailored to their interests, and the assurance that every detail would exceed expectations. GARYPARROTBEACH was built to deliver exactly that.
+              Our founders recognized that affluent travelers were tired of templated itineraries and cookie-cutter experiences. They wanted authentic connections with destinations, expert guidance tailored to their interests, and the assurance that every detail would exceed expectations. Parrotbeach was built to deliver exactly that.
             </p>
             <p>
-              Over nearly two decades, we&apos;ve designed journeys across 100+ destinations, partnered with 1,000+ carefully vetted vendors, and earned a 98% client satisfaction rate. We&apos;re trusted by executives, entrepreneurs, collectors, and adventurers from around the world—people who understand that the finest travel experiences are those that feel personally crafted just for them.
+              Over the years, we&apos;ve designed journeys across 100+ destinations, partnered with 1,000+ carefully vetted vendors, and earned a 98% client satisfaction rate. We&apos;re trusted by executives, entrepreneurs, collectors, and adventurers from around the world—people who understand that the finest travel experiences are those that feel personally crafted just for them.
             </p>
             <p>
-              Today, GARYPARROTBEACH remains independent, intimate, and deeply committed to the philosophy that drove our founding: your journey should be as extraordinary as your aspirations.
+              Today, Parrotbeach remains independent, intimate, and deeply committed to the philosophy that drove our founding: your journey should be as extraordinary as your aspirations.
             </p>
           </div>
         </div>
@@ -247,7 +247,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
-              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">GARYPARROTBEACH</h3>
+              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">Parrotbeach</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Luxury travel experiences for discerning travelers.</p>
             </div>
             <div>
@@ -256,25 +256,28 @@ export default function About() {
                 <li><Link href="/destinations" className="hover:text-amber-500 transition">Destinations</Link></li>
                 <li><Link href="/services" className="hover:text-amber-500 transition">Services</Link></li>
                 <li><Link href="/reviews" className="hover:text-amber-500 transition">Reviews</Link></li>
-                <li><Link href="/about" className="hover:text-amber-500 transition">About Us</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-white">Services</h4>
+              <h4 className="font-semibold mb-4 text-white">Company</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="#" className="hover:text-amber-500 transition">Luxury Tours</a></li>
-                <li><a href="#" className="hover:text-amber-500 transition">Private Jets</a></li>
-                <li><a href="#" className="hover:text-amber-500 transition">Yacht Charters</a></li>
+                <li><Link href="/about" className="hover:text-amber-500 transition">About Us</Link></li>
+                <li><Link href="/faq" className="hover:text-amber-500 transition">FAQ</Link></li>
+                <li><Link href="/contact" className="hover:text-amber-500 transition">Contact</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4 text-white">Contact</h4>
-              <p className="text-amber-500 font-semibold mb-2">+1 (800) TRAVEL-1</p>
-              <p className="text-gray-400 text-sm">24/7 Luxury Concierge</p>
+              <p className="text-gray-400 text-sm">Gary Seitz</p>
+              <p className="text-gray-400 text-sm">13 Green Apple Ct</p>
+              <p className="text-gray-400 text-sm">Sparta, NJ 07871</p>
+              <p className="text-amber-500 font-semibold mt-2">Mobile: 973-687-0899</p>
+              <p className="text-amber-500 font-semibold">Landline: 973-729-9335</p>
+              <p className="text-gray-400 text-sm mt-2">T. Lee Productions</p>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 GARYPARROTBEACH. All rights reserved.</p>
+            <p>&copy; 2026 Parrotbeach. All rights reserved.</p>
           </div>
         </div>
       </footer>

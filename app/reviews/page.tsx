@@ -15,7 +15,7 @@ const reviews = [
     image: '/reviewer-1.jpg',
     rating: 5,
     date: '3 months ago',
-    text: 'GARYPARROTBEACH transformed our family safari into an extraordinary adventure. The attention to every detail, from the luxury lodges to the exclusive game drive experiences, was simply remarkable. Our children will remember this forever.',
+    text: 'Parrotbeach transformed our family safari into an extraordinary adventure. The attention to every detail, from the luxury lodges to the exclusive game drive experiences, was simply remarkable. Our children will remember this forever.',
   },
   {
     id: 2,
@@ -95,7 +95,7 @@ const reviews = [
     image: '/reviewer-3.jpg',
     rating: 5,
     date: '2 weeks ago',
-    text: 'As someone in the hospitality industry, I can truly appreciate what GARYPARROTBEACH does. Their network is extraordinary, their service is impeccable, and their luxury standards are uncompromising.',
+    text: 'As someone in the hospitality industry, I can truly appreciate what Parrotbeach does. Their network is extraordinary, their service is impeccable, and their luxury standards are uncompromising.',
   },
   {
     id: 10,
@@ -176,7 +176,7 @@ export default function ReviewsPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-serif font-bold text-amber-600">
-            GARYPARROTBEACH
+            Parrotbeach
           </Link>
           <div className="hidden md:flex gap-8 items-center">
             <Link href="/destinations" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition">
@@ -258,26 +258,16 @@ export default function ReviewsPage() {
                 key={review.id}
                 className="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100"
               >
-                {/* Gradient Top */}
                 <div className="h-1 bg-gradient-to-r from-amber-500 to-amber-600"></div>
-
                 <div className="p-8">
-                  {/* Quote Icon */}
                   <Quote className="text-amber-200 mb-4" size={24} />
-
-                  {/* Rating */}
                   <div className="flex gap-1 mb-4">
                     {Array(review.rating).fill(0).map((_, i) => (
                       <Star key={i} size={16} className="fill-amber-500 text-amber-500" />
                     ))}
                   </div>
-
-                  {/* Review Text */}
                   <p className="text-gray-700 leading-relaxed mb-6 text-sm italic">"{review.text}"</p>
-
-                  {/* Divider */}
                   <div className="border-t border-gray-200 pt-6 mb-4">
-                    {/* Author Info */}
                     <div className="flex items-center gap-4">
                       <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
                         <Image
@@ -294,8 +284,6 @@ export default function ReviewsPage() {
                       </div>
                     </div>
                   </div>
-
-                  {/* Review Date */}
                   <p className="text-xs text-gray-400">{review.date}</p>
                 </div>
               </div>
@@ -309,7 +297,7 @@ export default function ReviewsPage() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-lg p-10">
             <h2 className="text-3xl font-serif font-bold text-gray-900 mb-4">Share Your Experience</h2>
-            <p className="text-gray-600 mb-8">Have you traveled with GARYPARROTBEACH? We&apos;d love to hear about your journey.</p>
+            <p className="text-gray-600 mb-8">Have you traveled with Parrotbeach? We&apos;d love to hear about your journey.</p>
 
             {submitted && (
               <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
@@ -379,7 +367,7 @@ export default function ReviewsPage() {
                   name="review"
                   value={formData.review}
                   onChange={handleInputChange}
-                  placeholder="Share your experience with GARYPARROTBEACH. What made your journey special?"
+                  placeholder="Share your experience with Parrotbeach. What made your journey special?"
                   rows={6}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-100 resize-none"
@@ -432,34 +420,37 @@ export default function ReviewsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
-              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">GARYPARROTBEACH</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Luxury travel experiences for discerning travelers worldwide.</p>
+              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">Parrotbeach</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">Luxury travel experiences for discerning travelers.</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4 text-white">Discover</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li><Link href="/destinations" className="hover:text-amber-500 transition">Destinations</Link></li>
+                <li><Link href="/experiences" className="hover:text-amber-500 transition">Experiences</Link></li>
                 <li><Link href="/services" className="hover:text-amber-500 transition">Services</Link></li>
-                <li><Link href="/reviews" className="hover:text-amber-500 transition">Reviews</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4 text-white">Company</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li><Link href="/about" className="hover:text-amber-500 transition">About Us</Link></li>
+                <li><Link href="/faq" className="hover:text-amber-500 transition">FAQ</Link></li>
                 <li><Link href="/contact" className="hover:text-amber-500 transition">Contact</Link></li>
-                <li><a href="#" className="hover:text-amber-500 transition">Careers</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4 text-white">Contact</h4>
-              <p className="text-amber-500 font-semibold mb-2">+1 (800) TRAVEL-1</p>
-              <p className="text-gray-400 text-sm">24/7 Luxury Concierge</p>
-              <p className="text-gray-400 text-sm">info@garyparrotbeach.com</p>
+              <p className="text-gray-400 text-sm">Gary Seitz</p>
+              <p className="text-gray-400 text-sm">13 Green Apple Ct</p>
+              <p className="text-gray-400 text-sm">Sparta, NJ 07871</p>
+              <p className="text-amber-500 font-semibold mt-2">Mobile: 973-687-0899</p>
+              <p className="text-amber-500 font-semibold">Landline: 973-729-9335</p>
+              <p className="text-gray-400 text-sm mt-2">T. Lee Productions</p>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 GARYPARROTBEACH. All rights reserved.</p>
+            <p>&copy; 2026 Parrotbeach. All rights reserved.</p>
           </div>
         </div>
       </footer>

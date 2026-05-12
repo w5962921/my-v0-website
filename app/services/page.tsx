@@ -64,7 +64,6 @@ const allServices = [
     id: 1,
     name: 'Himalayan Mountain Trekking',
     image: '/hiking-expedition.jpg',
-    price: 4500,
     duration: '12 days',
     groupSize: '2-8 guests',
     rating: 4.95,
@@ -77,7 +76,6 @@ const allServices = [
     id: 2,
     name: 'Hot Air Balloon Safari',
     image: '/hot-air-balloon.jpg',
-    price: 3200,
     duration: '3 days',
     groupSize: '2-4 guests',
     rating: 4.98,
@@ -90,7 +88,6 @@ const allServices = [
     id: 3,
     name: 'Luxury Island Trekking',
     image: '/island-excursion.jpg',
-    price: 2800,
     duration: '4 days',
     groupSize: '2-6 guests',
     rating: 4.92,
@@ -103,7 +100,6 @@ const allServices = [
     id: 4,
     name: 'Waterfall Expedition & Canyoning',
     image: '/waterfall-adventure.jpg',
-    price: 3500,
     duration: '5 days',
     groupSize: '2-8 guests',
     rating: 4.94,
@@ -116,7 +112,6 @@ const allServices = [
     id: 5,
     name: 'Private Yacht Island Hopping',
     image: '/luxury-yacht.jpg',
-    price: 8500,
     duration: '7 days',
     groupSize: '2-10 guests',
     rating: 4.96,
@@ -131,7 +126,6 @@ const allServices = [
     id: 6,
     name: 'Michelin-Star Culinary Tour',
     image: '/michelin-dining.jpg',
-    price: 6500,
     duration: '6 days',
     groupSize: '2-6 guests',
     rating: 4.99,
@@ -144,7 +138,6 @@ const allServices = [
     id: 7,
     name: 'Luxury Cooking Masterclass',
     image: '/cooking-class.jpg',
-    price: 2200,
     duration: '3 days',
     groupSize: '2-8 guests',
     rating: 4.91,
@@ -157,7 +150,6 @@ const allServices = [
     id: 8,
     name: 'Wine & Cheese Connoisseur',
     image: '/wine-tasting.jpg',
-    price: 3800,
     duration: '4 days',
     groupSize: '2-6 guests',
     rating: 4.97,
@@ -170,7 +162,6 @@ const allServices = [
     id: 9,
     name: 'Farm-to-Table Gourmet Experience',
     image: '/michelin-dining.jpg',
-    price: 2500,
     duration: '3 days',
     groupSize: '2-8 guests',
     rating: 4.93,
@@ -183,7 +174,6 @@ const allServices = [
     id: 10,
     name: 'Street Food Luxury Tour',
     image: '/carnival-celebration.jpg',
-    price: 1800,
     duration: '2 days',
     groupSize: '2-6 guests',
     rating: 4.88,
@@ -198,7 +188,6 @@ const allServices = [
     id: 11,
     name: 'World-Class Scuba Diving',
     image: '/scuba-diving.jpg',
-    price: 4200,
     duration: '5 days',
     groupSize: '2-8 guests',
     rating: 4.96,
@@ -211,7 +200,6 @@ const allServices = [
     id: 12,
     name: 'Private Yacht Charter Luxury',
     image: '/luxury-yacht.jpg',
-    price: 9800,
     duration: '7 days',
     groupSize: '2-12 guests',
     rating: 4.99,
@@ -224,7 +212,6 @@ const allServices = [
     id: 13,
     name: 'Luxury Fishing Expedition',
     image: '/scuba-diving.jpg',
-    price: 3600,
     duration: '4 days',
     groupSize: '2-6 guests',
     rating: 4.91,
@@ -237,7 +224,6 @@ const allServices = [
     id: 14,
     name: 'Snorkeling in Paradise',
     image: '/island-excursion.jpg',
-    price: 1900,
     duration: '3 days',
     groupSize: '2-8 guests',
     rating: 4.94,
@@ -250,7 +236,6 @@ const allServices = [
     id: 15,
     name: 'Sunset Catamaran Cruise',
     image: '/luxury-yacht.jpg',
-    price: 1500,
     duration: '1 day',
     groupSize: '2-20 guests',
     rating: 4.89,
@@ -265,7 +250,6 @@ const allServices = [
     id: 16,
     name: 'Art Museum Masterpiece Tour',
     image: '/art-museum-tour.jpg',
-    price: 2800,
     duration: '3 days',
     groupSize: '2-8 guests',
     rating: 4.93,
@@ -278,7 +262,6 @@ const allServices = [
     id: 17,
     name: 'Cultural Heritage Walking Tour',
     image: '/group-tour.jpg',
-    price: 1600,
     duration: '2 days',
     groupSize: '2-8 guests',
     rating: 4.90,
@@ -291,7 +274,6 @@ const allServices = [
     id: 18,
     name: 'Archaeological Expedition',
     image: '/hiking-expedition.jpg',
-    price: 5200,
     duration: '7 days',
     groupSize: '2-10 guests',
     rating: 4.95,
@@ -304,7 +286,6 @@ const allServices = [
     id: 19,
     name: 'Festival & Carnival Experience',
     image: '/carnival-celebration.jpg',
-    price: 3400,
     duration: '4 days',
     groupSize: '2-8 guests',
     rating: 4.94,
@@ -317,7 +298,6 @@ const allServices = [
     id: 20,
     name: 'Spiritual & Sacred Journey',
     image: '/wellness-retreat.jpg',
-    price: 3100,
     duration: '5 days',
     groupSize: '2-6 guests',
     rating: 4.92,
@@ -332,7 +312,6 @@ const allServices = [
     id: 21,
     name: 'Luxury Spa & Wellness Retreat',
     image: '/wellness-retreat.jpg',
-    price: 4800,
     duration: '6 days',
     groupSize: '2-8 guests',
     rating: 4.97,
@@ -345,7 +324,6 @@ const allServices = [
     id: 22,
     name: 'Yoga & Meditation Retreat',
     image: '/wellness-retreat.jpg',
-    price: 2400,
     duration: '4 days',
     groupSize: '2-12 guests',
     rating: 4.94,
@@ -358,7 +336,6 @@ const allServices = [
     id: 23,
     name: 'Detox & Rejuvenation Program',
     image: '/luxury-spa.jpg',
-    price: 3600,
     duration: '5 days',
     groupSize: '2-8 guests',
     rating: 4.91,
@@ -371,7 +348,6 @@ const allServices = [
     id: 24,
     name: 'Adventure Fitness Retreat',
     image: '/hiking-expedition.jpg',
-    price: 3200,
     duration: '5 days',
     groupSize: '2-8 guests',
     rating: 4.88,
@@ -384,7 +360,6 @@ const allServices = [
     id: 25,
     name: 'Couples Romantic Spa Escape',
     image: '/luxury-spa.jpg',
-    price: 2800,
     duration: '3 days',
     groupSize: '2 guests',
     rating: 4.96,
@@ -399,7 +374,6 @@ const allServices = [
     id: 26,
     name: 'Exclusive Private Gala Dinner',
     image: '/michelin-dining.jpg',
-    price: 5500,
     duration: '1 evening',
     groupSize: '2-50 guests',
     rating: 4.98,
@@ -412,7 +386,6 @@ const allServices = [
     id: 27,
     name: 'Luxury Wedding Destination',
     image: '/island-excursion.jpg',
-    price: 25000,
     duration: '3-7 days',
     groupSize: '2-200 guests',
     rating: 4.99,
@@ -425,7 +398,6 @@ const allServices = [
     id: 28,
     name: 'Carnival VIP Experience',
     image: '/carnival-celebration.jpg',
-    price: 4200,
     duration: '4 days',
     groupSize: '2-8 guests',
     rating: 4.95,
@@ -438,7 +410,6 @@ const allServices = [
     id: 29,
     name: 'Private Concert Experience',
     image: '/carnival-celebration.jpg',
-    price: 3800,
     duration: '2 days',
     groupSize: '2-30 guests',
     rating: 4.92,
@@ -451,7 +422,6 @@ const allServices = [
     id: 30,
     name: 'Private Jet Group Tour',
     image: '/private-jet.jpg',
-    price: 18500,
     duration: '7 days',
     groupSize: '2-14 guests',
     rating: 4.97,
@@ -474,8 +444,8 @@ export default function ServicesPage() {
     }
   }
 
-  const handleBooking = (name: string, price: number) => {
-    window.location.href = `/contact?package=${encodeURIComponent(name)}&price=${price}`
+  const handleBooking = (name: string) => {
+    window.location.href = `/contact?package=${encodeURIComponent(name)}`
   }
 
   return (
@@ -484,7 +454,7 @@ export default function ServicesPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-serif font-bold text-amber-600">
-            GARYPARROTBEACH
+            Parrotbeach
           </Link>
           <div className="hidden md:flex gap-8 items-center">
             <Link href="/destinations" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition">
@@ -620,18 +590,14 @@ export default function ServicesPage() {
                     </ul>
                   </div>
 
-                  {/* Pricing */}
-                  <div className="mb-4 pb-4 border-b border-gray-200">
-                    <p className="text-2xl font-bold text-amber-600">${service.price.toLocaleString()}</p>
-                    <p className="text-xs text-gray-500">per person</p>
-                  </div>
+                  {/* Pricing section removed */}
 
                   {/* CTA */}
                   <button
-                    onClick={() => handleBooking(service.name, service.price)}
+                    onClick={() => handleBooking(service.name)}
                     className="w-full bg-amber-600 text-white py-3 rounded-lg font-semibold hover:bg-amber-700 transition flex items-center justify-center gap-2 group/btn"
                   >
-                    Book Experience
+                    Inquire Now
                     <ChevronRight size={18} className="group-hover/btn:translate-x-1 transition" />
                   </button>
                 </div>
@@ -661,12 +627,12 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer – Updated as requested */}
       <footer className="bg-gray-900 text-white py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
-              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">GARYPARROTBEACH</h3>
+              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">Parrotbeach</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Luxury travel experiences for discerning travelers.</p>
             </div>
             <div>
@@ -678,21 +644,25 @@ export default function ServicesPage() {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-white">Categories</h4>
+              <h4 className="font-semibold mb-4 text-white">Company</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="#outdoor" className="hover:text-amber-500 transition">Outdoor Adventures</a></li>
-                <li><a href="#culinary" className="hover:text-amber-500 transition">Culinary</a></li>
-                <li><a href="#wellness" className="hover:text-amber-500 transition">Wellness</a></li>
+                <li><Link href="/about" className="hover:text-amber-500 transition">About Us</Link></li>
+                <li><Link href="/faq" className="hover:text-amber-500 transition">FAQ</Link></li>
+                <li><Link href="/contact" className="hover:text-amber-500 transition">Contact</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4 text-white">Contact</h4>
-              <p className="text-amber-500 font-semibold mb-2">+1 (800) TRAVEL-1</p>
-              <p className="text-gray-400 text-sm">24/7 Luxury Concierge</p>
+              <p className="text-gray-400 text-sm">Gary Seitz</p>
+              <p className="text-gray-400 text-sm">13 Green Apple Ct</p>
+              <p className="text-gray-400 text-sm">Sparta, NJ 07871</p>
+              <p className="text-amber-500 font-semibold mt-2">Mobile: 973-687-0899</p>
+              <p className="text-amber-500 font-semibold">Landline: 973-729-9335</p>
+              <p className="text-gray-400 text-sm mt-2">T. Lee Productions</p>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 GARYPARROTBEACH. All rights reserved.</p>
+            <p>&copy; 2026 Parrotbeach. All rights reserved.</p>
           </div>
         </div>
       </footer>

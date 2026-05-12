@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { MapPin, Users2, DollarSign, Star, ArrowRight, Briefcase, Heart } from 'lucide-react'
+import { MapPin, Users2, Star, ArrowRight, Briefcase, Heart } from 'lucide-react'
 import AnimatedHero from '@/components/animated-hero'
 
 const experiences = [
@@ -11,7 +11,6 @@ const experiences = [
     category: 'Maritime',
     name: 'Superyacht Mediterranean Charter',
     location: 'Greek Islands, Italy, France',
-    price: 45000,
     duration: '7-14 days',
     capacity: '2-12 guests',
     image: '/luxury-yacht.jpg',
@@ -25,7 +24,6 @@ const experiences = [
     category: 'Aviation',
     name: 'Global Private Jet Experience',
     location: 'Worldwide',
-    price: 85000,
     duration: 'Custom',
     capacity: '2-8 passengers',
     image: '/private-jet.jpg',
@@ -39,7 +37,6 @@ const experiences = [
     category: 'Wellness',
     name: 'Luxury Spa & Wellness Retreat',
     location: 'Switzerland, Costa Rica, Bali',
-    price: 28500,
     duration: '5-10 days',
     capacity: '2-20 guests',
     image: '/luxury-spa.jpg',
@@ -53,7 +50,6 @@ const experiences = [
     category: 'Culinary',
     name: 'Michelin Star Culinary Journey',
     location: 'France, Italy, Spain, Japan',
-    price: 19500,
     duration: '5-8 days',
     capacity: '2-8 guests',
     image: '/wine-tasting.jpg',
@@ -67,7 +63,6 @@ const experiences = [
     category: 'Adventure',
     name: 'Extreme Expedition Adventure',
     location: 'Himalayas, Patagonia, Kilimanjaro',
-    price: 35600,
     duration: '7-14 days',
     capacity: '4-12 guests',
     image: '/adventure-hiking.jpg',
@@ -81,7 +76,6 @@ const experiences = [
     category: 'Cultural',
     name: 'Cultural Heritage & Art Discovery',
     location: 'Egypt, Greece, Peru, Italy',
-    price: 18500,
     duration: '8-12 days',
     capacity: '2-12 guests',
     image: '/cultural-tour.jpg',
@@ -95,7 +89,6 @@ const experiences = [
     category: 'Safari',
     name: 'African Wildlife Safari Expedition',
     location: 'Kenya, Tanzania, South Africa',
-    price: 22400,
     duration: '6-10 days',
     capacity: '2-8 guests',
     image: '/kenya-safari.jpg',
@@ -109,7 +102,6 @@ const experiences = [
     category: 'Luxury',
     name: 'Private Island Resort Escape',
     location: 'Maldives, Caribbean, Polynesia',
-    price: 31200,
     duration: '5-7 days',
     capacity: '2-4 guests',
     image: '/maldives.jpg',
@@ -121,11 +113,9 @@ const experiences = [
 ]
 
 export default function ExperiencesPage() {
-  const handleBooking = (name: string, price: number) => {
-    window.location.href = `/contact?package=${encodeURIComponent(name)}&price=${price}`
+  const handleBooking = (name: string) => {
+    window.location.href = `/contact?package=${encodeURIComponent(name)}`
   }
-
-  const categories = ['All', ...Array.from(new Set(experiences.map(e => e.category)))]
 
   return (
     <div className="min-h-screen bg-white">
@@ -133,7 +123,7 @@ export default function ExperiencesPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-serif font-bold text-amber-600">
-            GARYPARROTBEACH
+            Parrotbeach
           </Link>
           <div className="hidden md:flex gap-8 items-center">
             <Link href="/destinations" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition">
@@ -209,8 +199,8 @@ export default function ExperiencesPage() {
 
                   <p className="text-gray-600 leading-relaxed mb-6">{exp.description}</p>
 
-                  {/* Details Grid */}
-                  <div className="grid grid-cols-3 gap-4 mb-6 pb-6 border-b border-gray-200">
+                  {/* Details Grid – Price row removed (now only Duration and Capacity) */}
+                  <div className="grid grid-cols-2 gap-4 mb-6 pb-6 border-b border-gray-200">
                     <div>
                       <p className="text-xs text-gray-500 uppercase font-semibold mb-1">Duration</p>
                       <p className="text-lg font-bold text-gray-900">{exp.duration}</p>
@@ -218,10 +208,6 @@ export default function ExperiencesPage() {
                     <div>
                       <p className="text-xs text-gray-500 uppercase font-semibold mb-1">Capacity</p>
                       <p className="text-lg font-bold text-gray-900">{exp.capacity}</p>
-                    </div>
-                    <div>
-                      <p className="text-xs text-gray-500 uppercase font-semibold mb-1">Price</p>
-                      <p className="text-lg font-bold text-amber-600">${exp.price.toLocaleString()}</p>
                     </div>
                   </div>
 
@@ -251,7 +237,7 @@ export default function ExperiencesPage() {
                   </div>
 
                   <button
-                    onClick={() => handleBooking(exp.name, exp.price)}
+                    onClick={() => handleBooking(exp.name)}
                     className="w-full bg-amber-600 text-white py-3 rounded-lg font-semibold hover:bg-amber-700 transition flex items-center justify-center gap-2"
                   >
                     Inquire Now <ArrowRight size={18} />
@@ -277,12 +263,12 @@ export default function ExperiencesPage() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer – Updated with Company column and your contact details */}
       <footer className="bg-gray-900 text-white py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
-              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">GARYPARROTBEACH</h3>
+              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">Parrotbeach</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Luxury travel experiences for discerning travelers.</p>
             </div>
             <div>
@@ -290,25 +276,29 @@ export default function ExperiencesPage() {
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li><Link href="/destinations" className="hover:text-amber-500 transition">Destinations</Link></li>
                 <li><Link href="/experiences" className="hover:text-amber-500 transition">Experiences</Link></li>
-                <li><Link href="/about" className="hover:text-amber-500 transition">About Us</Link></li>
+                <li><Link href="/services" className="hover:text-amber-500 transition">Services</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-white">Services</h4>
+              <h4 className="font-semibold mb-4 text-white">Company</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="#" className="hover:text-amber-500 transition">Luxury Tours</a></li>
-                <li><a href="#" className="hover:text-amber-500 transition">Private Jets</a></li>
-                <li><a href="#" className="hover:text-amber-500 transition">Yacht Charters</a></li>
+                <li><Link href="/about" className="hover:text-amber-500 transition">About Us</Link></li>
+                <li><Link href="/faq" className="hover:text-amber-500 transition">FAQ</Link></li>
+                <li><Link href="/contact" className="hover:text-amber-500 transition">Contact</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4 text-white">Contact</h4>
-              <p className="text-amber-500 font-semibold mb-2">+1 (800) TRAVEL-1</p>
-              <p className="text-gray-400 text-sm">24/7 Luxury Concierge</p>
+              <p className="text-gray-400 text-sm">Gary Seitz</p>
+              <p className="text-gray-400 text-sm">13 Green Apple Ct</p>
+              <p className="text-gray-400 text-sm">Sparta, NJ 07871</p>
+              <p className="text-amber-500 font-semibold mt-2">Mobile: 973-687-0899</p>
+              <p className="text-amber-500 font-semibold">Landline: 973-729-9335</p>
+              <p className="text-gray-400 text-sm mt-2">T. Lee Productions</p>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 GARYPARROTBEACH. All rights reserved.</p>
+            <p>&copy; 2026 Parrotbeach. All rights reserved.</p>
           </div>
         </div>
       </footer>
