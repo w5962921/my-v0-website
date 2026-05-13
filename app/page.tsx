@@ -8,37 +8,37 @@ import { ArrowRight, Star, MapPin, Calendar, Menu, X, Ship, Binoculars, Landmark
 const journeyStories = [
   {
     id: 1,
-    title: 'The Art of Wandering',
-    excerpt: 'Discover how intentional travel shapes the soul. From the galleries of Florence to the temples of Kyoto, we craft journeys where every moment becomes a memory.',
+    title: 'The American Heritage Trail',
+    excerpt: 'From the Freedom Trail in Boston to the historic plantations of Charleston, immerse yourself in the rich tapestry of American history with private curator tours and luxury stays.',
     image: '/hero-maldives.jpg',
-    destination: 'Europe & Asia',
-    duration: '14 days',
+    destination: 'USA – East Coast',
+    duration: '12 days',
   },
   {
     id: 2,
-    title: 'Wilderness Awakening',
-    excerpt: 'True adventure demands more than courage—it demands presence. Immerse yourself in Africa\'s most pristine ecosystems and emerge transformed.',
+    title: 'Wilderness Awakening – Yellowstone',
+    excerpt: 'Witness bison, elk, and wolves in their natural habitat. Stay in luxury lodges just steps away from geothermal wonders and pristine wilderness.',
     image: '/kenya-safari.jpg',
-    destination: 'Kenya & Tanzania',
-    duration: '10 days',
+    destination: 'Wyoming & Montana',
+    duration: '8 days',
   },
   {
     id: 3,
-    title: 'Alpine Tranquility',
-    excerpt: 'Where mountains touch the sky, the soul finds peace. Experience luxury intertwined with nature\'s grandeur in the heart of the Alps.',
+    title: 'Alpine Tranquility – Colorado',
+    excerpt: 'Where the Rocky Mountains touch the sky, the soul finds peace. Experience luxury intertwined with nature’s grandeur in Aspen and Vail.',
     image: '/swiss-alps.jpg',
-    destination: 'Switzerland',
-    duration: '8 days',
+    destination: 'Colorado',
+    duration: '6 days',
   },
 ]
 
 const experiences = [
-  { category: 'Yacht Charters', count: '45+', icon: 'ship', desc: 'Private Mediterranean voyages' },
-  { category: 'Safari Expeditions', count: '32+', icon: 'binoculars', desc: 'Guided wildlife encounters' },
-  { category: 'Cultural Immersion', count: '67+', icon: 'landmark', desc: 'Heritage & traditions' },
-  { category: 'Mountain Retreats', count: '28+', icon: 'mountain', desc: 'Alpine luxury escapes' },
-  { category: 'Culinary Tours', count: '41+', icon: 'wine', desc: 'Gastronomic journeys' },
-  { category: 'Wellness Sanctuaries', count: '36+', icon: 'heart', desc: 'Spa & rejuvenation' },
+  { category: 'Yacht Charters', count: '45+', icon: 'ship', desc: 'Private Florida & Bahamas voyages' },
+  { category: 'Safari Expeditions', count: '32+', icon: 'binoculars', desc: 'Guided wildlife encounters in Yellowstone' },
+  { category: 'Cultural Immersion', count: '67+', icon: 'landmark', desc: 'American heritage & traditions' },
+  { category: 'Mountain Retreats', count: '28+', icon: 'mountain', desc: 'Rocky Mountain luxury escapes' },
+  { category: 'Culinary Tours', count: '41+', icon: 'wine', desc: 'Gastronomic journeys across the USA' },
+  { category: 'Wellness Sanctuaries', count: '36+', icon: 'heart', desc: 'Spa & rejuvenation from coast to coast' },
 ]
 
 const getExperienceIcon = (iconName: string) => {
@@ -57,21 +57,21 @@ const testimonials = [
   {
     name: 'Victoria Richardson',
     title: 'CEO, Goldman Sachs',
-    location: 'London',
+    location: 'New York',
     text: 'Not just a travel agency—they are dream architects. Every detail was perfected with intention.',
     rating: 5,
   },
   {
     name: 'Michael Chen',
     title: 'Venture Capitalist',
-    location: 'Singapore',
+    location: 'San Francisco',
     text: 'In twenty years of travel, nothing compares. This wasn\'t a trip; it was a transformative experience.',
     rating: 5,
   },
   {
     name: 'Elena Vasquez',
     title: 'Art Director',
-    location: 'Buenos Aires',
+    location: 'Santa Fe',
     text: 'They understand that luxury is about feeling, not spending. Truly remarkable.',
     rating: 5,
   },
@@ -237,7 +237,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Journey Stories */}
+      {/* Featured Journey Stories (USA) */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fade-in-up">
@@ -279,7 +279,6 @@ export default function Home() {
                       {story.duration}
                     </span>
                   </div>
-                  {/* Price removed */}
                   <button
                     onClick={() => handleBooking(story.title)}
                     className="w-full bg-gray-900 text-white py-3 rounded-lg hover:bg-amber-600 transition-all duration-300 font-semibold hover:shadow-lg hover:translate-y-[-2px]"
@@ -375,12 +374,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section – updated with general phrasing */}
+      {/* Stats Section – USA focus */}
       <section className="py-20 px-6 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             {[
-              { number: '100+', label: 'Destinations Worldwide' },
+              { number: '50+', label: 'USA Destinations' },
               { number: 'Years of', label: 'Excellence' },
               { number: '5000+', label: 'Journeys Curated' },
               { number: '24/7', label: 'Concierge Support' },

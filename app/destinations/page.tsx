@@ -9,171 +9,171 @@ import AnimatedHero from '@/components/animated-hero'
 const allDestinations = [
   {
     id: 1,
-    name: 'Maldives',
-    region: 'Asia-Pacific',
+    name: 'Florida Keys',
+    region: 'USA - Southeast',
     image: '/maldives.jpg',
     rating: 4.9,
     duration: '5-7 days',
-    description: 'Tropical paradise with overwater bungalows, world-class diving, and pristine white-sand beaches. Crystal-clear lagoons, vibrant coral reefs, and exclusive island resorts define this ultimate luxury destination.',
+    description: 'Tropical paradise with overwater bungalows, world‑class diving, and pristine white‑sand beaches. Crystal‑clear waters, vibrant coral reefs, and exclusive island resorts define this ultimate luxury destination in the Florida Keys.',
     highlights: ['Overwater Bungalows', 'Snorkeling & Diving', 'Private Island Access', 'Sunset Cruises', 'Water Sports', 'Spa & Wellness'],
     bestFor: ['Honeymoons', 'Couples', 'Beach lovers', 'Divers'],
-    climate: 'Tropical, 28-32°C year-round',
-    cuisine: 'Indian, Asian, International fusion',
-    accommodation: '5-star luxury resorts with private villas',
+    climate: 'Tropical, 25-32°C year-round',
+    cuisine: 'Seafood, Floribbean, International fusion',
+    accommodation: '5‑star luxury resorts with private villas',
   },
   {
     id: 2,
-    name: 'Swiss Alps',
-    region: 'Europe',
+    name: 'Colorado Rockies',
+    region: 'USA - West',
     image: '/swiss-alps-luxury.jpg',
     rating: 4.95,
     duration: '6-8 days',
-    description: 'Snow-capped peaks, luxury alpine chalets, and world-class skiing. Experience breathtaking mountain vistas, charming Swiss villages, and Michelin-starred dining in a pristine alpine setting.',
-    highlights: ['Luxury Chalets', 'Skiing & Snowboarding', 'Mountain Hiking', 'Spa Treatments', 'Fine Dining', 'Wine Tasting'],
+    description: 'Snow‑capped peaks, luxury alpine lodges, and world‑class skiing in the heart of the Rocky Mountains. Experience breathtaking mountain vistas, charming towns like Aspen and Vail, and Michelin‑starred dining in a pristine alpine setting.',
+    highlights: ['Luxury Lodges', 'Skiing & Snowboarding', 'Mountain Hiking', 'Hot Springs', 'Fine Dining', 'Wine Tasting'],
     bestFor: ['Skiers', 'Mountain lovers', 'Adventure seekers', 'Foodies'],
-    climate: 'Alpine, -5 to 15°C depending on season',
-    cuisine: 'Swiss, French, Italian regional specialties',
-    accommodation: '5-star mountain resorts and private chalets',
+    climate: 'Alpine, -5 to 25°C depending on season',
+    cuisine: 'American, Southwestern, European‑inspired',
+    accommodation: '5‑star mountain resorts and private lodges',
   },
   {
     id: 3,
-    name: 'Kenya',
-    region: 'Africa',
+    name: 'Yellowstone & Grand Teton',
+    region: 'USA - West',
     image: '/kenya-safari-luxury.jpg',
     rating: 4.92,
     duration: '5-8 days',
-    description: 'World-renowned safari destination featuring the Masai Mara, the Big Five, and the annual great migration. Experience authentic African wildlife, Maasai culture, and luxury conservation lodges.',
-    highlights: ['Game Drives', 'Big Five Encounters', 'Maasai Villages', 'Bush Dinners', 'Wildlife Photography', 'Conservation Projects'],
+    description: 'World‑renowned wildlife and geothermal wonders in Wyoming and Montana. Experience the American bison, elk, bears, and wolves, plus Old Faithful and the Grand Prismatic Spring. Stay in luxury conservation lodges.',
+    highlights: ['Wildlife Safaris', 'Geothermal Features', 'Scenic Drives', 'Luxury Lodges', 'Photography Tours', 'Hiking'],
     bestFor: ['Wildlife enthusiasts', 'Photographers', 'Families', 'Adventure travelers'],
-    climate: 'Tropical savanna, 15-28°C',
-    cuisine: 'East African, Maasai specialties, International',
-    accommodation: 'Luxury safari lodges and tented camps',
+    climate: 'Mountainous, 0-25°C, cool nights',
+    cuisine: 'Western, game meats, local produce',
+    accommodation: 'Luxury eco‑lodges and ranch stays',
   },
   {
     id: 4,
-    name: 'French Riviera',
-    region: 'Europe',
+    name: 'California Coast',
+    region: 'USA - West',
     image: '/french-riviera-luxury.jpg',
     rating: 4.96,
     duration: '6-9 days',
-    description: 'Côte d\'Azur glamour with exclusive yacht charters, Michelin-starred restaurants, and private beach clubs. Experience Mediterranean elegance from Cannes to Monaco.',
-    highlights: ['Yacht Charter', 'Michelin-Starred Dining', 'Exclusive Beach Clubs', 'Monaco Visit', 'Wine Tasting', 'Fashion District'],
-    bestFor: ['Luxury seekers', 'Foodies', 'Yacht enthusiasts', 'Romantic getaways'],
+    description: 'From Big Sur to Malibu, experience California glamour with exclusive yacht charters, Michelin‑starred restaurants, and private beach clubs. Enjoy the iconic Pacific Coast Highway and Mediterranean elegance of Santa Barbara and Monterey.',
+    highlights: ['Pacific Coast Highway', 'Michelin‑Starred Dining', 'Private Beach Clubs', 'Wine Tasting', 'Surfing Lessons', 'Luxury Spas'],
+    bestFor: ['Luxury seekers', 'Foodies', 'Road trip enthusiasts', 'Romantic getaways'],
     climate: 'Mediterranean, 10-28°C',
-    cuisine: 'Provençal French, Mediterranean, seafood',
-    accommodation: '5-star beachfront hotels and luxury villas',
+    cuisine: 'Californian, farm‑to‑table, seafood',
+    accommodation: '5‑star beachfront hotels and luxury villas',
   },
   {
     id: 5,
-    name: 'Iceland',
-    region: 'Europe',
+    name: 'Alaska: Kenai Fjords',
+    region: 'USA - West',
     image: '/iceland-luxury.jpg',
     rating: 4.88,
     duration: '7-10 days',
-    description: 'Land of fire and ice with otherworldly landscapes. Experience stunning waterfalls, geothermal hot springs, black sand beaches, and the magical Northern Lights in luxury Icelandic retreats.',
-    highlights: ['Golden Circle', 'Northern Lights', 'Blue Lagoon', 'Glacier Hiking', 'Waterfall Tours', 'Luxury Lodges'],
+    description: 'Land of glaciers and wildlife. Experience stunning fjords, humpback whales, sea otters, and the magical Northern Lights in luxury Alaskan retreats. Heli‑hiking, glacier cruises, and exclusive lodges.',
+    highlights: ['Glacier Cruises', 'Wildlife Viewing', 'Heli‑Hiking', 'Luxury Lodges', 'Whale Watching', 'Northern Lights (winter)'],
     bestFor: ['Adventure seekers', 'Nature lovers', 'Photographers', 'Couples'],
-    climate: 'Cool, 0-5°C in winter, 10-15°C in summer',
-    cuisine: 'Arctic seafood, Icelandic lamb, Nordic cuisine',
-    accommodation: 'Luxury eco-lodges and unique stays',
+    climate: 'Cool, 0-15°C in summer, colder in winter',
+    cuisine: 'Seafood, Alaskan salmon, game meats',
+    accommodation: 'Luxury wilderness lodges',
   },
   {
     id: 6,
-    name: 'Japan',
-    region: 'Asia-Pacific',
+    name: 'Hawaii (Big Island)',
+    region: 'USA - Pacific',
     image: '/japan-luxury.jpg',
     rating: 4.93,
     duration: '10-14 days',
-    description: 'Ancient temples, cutting-edge cities, and breathtaking natural beauty. From Kyoto\'s geisha districts to Tokyo\'s innovation, experience the perfect blend of tradition and modernity in Japan\'s luxury experiences.',
-    highlights: ['Temple Stays', 'Geisha Districts', 'Mount Fuji Views', 'Tea Ceremonies', 'Zen Gardens', 'Michelin Dining'],
-    bestFor: ['Culture enthusiasts', 'Adventure travelers', 'Foodies', 'Art lovers'],
-    climate: 'Temperate, varies by region',
-    cuisine: 'Japanese haute cuisine, regional specialties, kaiseki',
-    accommodation: 'Traditional ryokans and modern luxury hotels',
+    description: 'Volcanic landscapes, black‑sand beaches, and ancient Hawaiian culture. From the active Kīlauea volcano to luxury resorts on the Kohala Coast, experience the aloha spirit with exclusive helicopter tours and sacred sites.',
+    highlights: ['Volcano Tours', 'Black‑Sand Beaches', 'Luaus', 'Helicopter Flights', 'Hiking to Waterfalls', 'Snorkeling with Manta Rays'],
+    bestFor: ['Adventure travelers', 'Culture enthusiasts', 'Couples', 'Families'],
+    climate: 'Tropical, 20-30°C',
+    cuisine: 'Hawaiian, Pacific Rim, fresh poke',
+    accommodation: 'Luxury resorts and private estates',
   },
   {
     id: 7,
-    name: 'Patagonia',
-    region: 'South America',
+    name: 'Montana: Glacier National Park',
+    region: 'USA - West',
     image: '/patagonia-luxury.jpg',
     rating: 4.91,
     duration: '8-12 days',
-    description: 'Southern Hemisphere\'s most dramatic landscapes featuring towering granite peaks, pristine glaciers, and untamed wilderness. Hike ancient ice fields and kayak fjords in secluded mountain lodges.',
-    highlights: ['Glacier Trekking', 'Monte Fitz Roy', 'Fjord Kayaking', 'Wildlife Viewing', 'Mountain Hiking', 'Estancia Stays'],
+    description: 'Dramatic mountain landscapes, pristine glacial lakes, and untamed wilderness. Hike the Going‑to‑the‑Sun Road, kayak on Lake McDonald, and stay in secluded mountain lodges with luxury amenities.',
+    highlights: ['Glacier Hiking', 'Wildlife Viewing', 'Lake Kayaking', 'Luxury Lodges', 'Scenic Drives', 'Fly Fishing'],
     bestFor: ['Adventure seekers', 'Hikers', 'Photographers', 'Nature lovers'],
-    climate: 'Cool, 8-15°C, windy conditions',
-    cuisine: 'Argentine beef, Patagonian lamb, local fish',
-    accommodation: 'Luxury lodges and estancias',
+    climate: 'Cool, 8-20°C, snow possible',
+    cuisine: 'Montana beef, wild game, artisan cheeses',
+    accommodation: 'Luxury lodges and private cabins',
   },
   {
     id: 8,
-    name: 'Greece',
-    region: 'Europe',
+    name: 'South Carolina Lowcountry',
+    region: 'USA - Southeast',
     image: '/greece-luxury.jpg',
     rating: 4.94,
     duration: '7-10 days',
-    description: 'Mediterranean islands with ancient history and pristine beaches. Explore Santorini\'s sunset views, Mykonos\' vibrant nightlife, and the Aegean\'s hidden islands with exclusive yacht charters and private villas.',
-    highlights: ['Island Hopping', 'Yacht Charters', 'Ancient Ruins', 'Wine Tasting', 'Beach Clubs', 'Sunset Views'],
-    bestFor: ['Couples', 'Yacht enthusiasts', 'History buffs', 'Romantics'],
-    climate: 'Mediterranean, 20-28°C in summer',
-    cuisine: 'Greek Mediterranean, fresh seafood, local wines',
-    accommodation: 'Luxury island villas and boutique hotels',
+    description: 'Antebellum charm, coastal marshes, and Southern hospitality. Explore Charleston’s historic streets, take private yacht charters in the sea islands, and indulge in Gullah cuisine at exclusive plantations turned resorts.',
+    highlights: ['Historical Plantations', 'Yacht Charters', 'Lowcountry Cuisine', 'Beach Clubs', 'Gullah Culture', 'Sunset Cruises'],
+    bestFor: ['History buffs', 'Romantics', 'Foodies', 'Couples'],
+    climate: 'Subtropical, 15-30°C',
+    cuisine: 'Gullah, seafood, Southern comfort food',
+    accommodation: 'Luxury inns, historic hotels, private estates',
   },
   {
     id: 9,
-    name: 'Australia',
-    region: 'Asia-Pacific',
+    name: 'Arizona: Grand Canyon & Sedona',
+    region: 'USA - West',
     image: '/australia-luxury.jpg',
     rating: 4.87,
     duration: '12-15 days',
-    description: 'From the Great Barrier Reef to the Outback. Experience world-class diving, Aboriginal culture, luxury Australian wine regions, and urban sophistication in Sydney and Melbourne.',
-    highlights: ['Great Barrier Reef', 'Outback Safari', 'Aboriginal Culture', 'Wine Country', 'Sydney Opera House', 'Beach Clubs'],
-    bestFor: ['Adventure lovers', 'Divers', 'Culture seekers', 'Families'],
-    climate: 'Varies, 15-25°C in most regions',
-    cuisine: 'Modern Australian, Asian fusion, local wines',
-    accommodation: 'Luxury resorts and boutique hotels',
+    description: 'From the majestic Grand Canyon to the red rocks of Sedona. Experience helicopter tours over the canyon, jeep adventures, vortex spiritual sites, and luxury desert resorts with world‑class spas.',
+    highlights: ['Grand Canyon Helicopter', 'Sedona Red Rocks', 'Vortex Tours', 'Jeep Safaris', 'Wine Tasting', 'Luxury Spas'],
+    bestFor: ['Adventure lovers', 'Spiritual seekers', 'Photographers', 'Families'],
+    climate: 'Desert, 10-35°C',
+    cuisine: 'Southwestern, Native American, Mexican',
+    accommodation: 'Luxury resorts and canyon‑view lodges',
   },
   {
     id: 10,
-    name: 'Morocco',
-    region: 'Africa',
+    name: 'New Mexico: Santa Fe & Taos',
+    region: 'USA - West',
     image: '/morocco-luxury.jpg',
     rating: 4.89,
     duration: '6-9 days',
-    description: 'Ancient medinas, Sahara desert camps, and Atlas Mountains. Immerse yourself in Berber culture, indulge in hammams, and experience authentic Moroccan hospitality in luxury riads and desert camps.',
-    highlights: ['Sahara Camps', 'Atlas Mountains', 'Medina Markets', 'Hammams', 'Berber Culture', 'Camel Trekking'],
-    bestFor: ['Cultural explorers', 'Adventurers', 'Desert enthusiasts', 'Romantics'],
-    climate: 'Desert, 15-30°C depending on season',
-    cuisine: 'Moroccan tagines, couscous, mint tea culture',
-    accommodation: 'Luxury riads and Sahara desert camps',
+    description: 'Ancient Puebloan culture, adobe architecture, and high desert beauty. Explore Santa Fe’s art galleries, Taos Pueblo, and take hot air balloon rides over the Rio Grande. Stay in luxury inns with Southwestern flair.',
+    highlights: ['Art Galleries', 'Pueblo Tours', 'Hot Air Balloons', 'Adobe Architecture', 'Native American Culture', 'Spa Retreats'],
+    bestFor: ['Cultural explorers', 'Art lovers', 'Adventurers', 'Romantics'],
+    climate: 'High desert, 5-30°C',
+    cuisine: 'New Mexican, Native American, fusion',
+    accommodation: 'Luxury adobe resorts and boutique inns',
   },
   {
     id: 11,
-    name: 'Egypt',
-    region: 'Africa',
+    name: 'Utah: Moab & Arches',
+    region: 'USA - West',
     image: '/kenya-safari.jpg',
     rating: 4.90,
     duration: '7-10 days',
-    description: 'Land of pharaohs and timeless wonders. Explore the Pyramids, cruise the Nile River, visit temples of Luxor, and experience ancient Egyptian culture from luxury cruise ships and exclusive resort stays.',
-    highlights: ['Pyramids & Sphinx', 'Nile Cruise', 'Luxor Temples', 'Cairo Museum', 'Aswan Beauty', 'Hot Air Balloons'],
-    bestFor: ['History enthusiasts', 'Luxury travelers', 'Adventurers', 'Culture lovers'],
-    climate: 'Desert, 20-35°C, minimal rainfall',
-    cuisine: 'Egyptian specialties, Mediterranean influence, Nile dining',
-    accommodation: 'Luxury Nile cruises and resort hotels',
+    description: 'Red rock landscapes, arches, and canyons. Hike to Delicate Arch, off‑road in a Hummer, and float the Colorado River. Stay in luxury glamping tents or high‑end lodges near Canyonlands National Park.',
+    highlights: ['Arches National Park', 'Off‑Roading', 'River Rafting', 'Luxury Glamping', 'Stargazing', 'Mountain Biking'],
+    bestFor: ['Adventure enthusiasts', 'Nature lovers', 'Families', 'Solo travelers'],
+    climate: 'Desert, 15-35°C',
+    cuisine: 'Western, barbecue, farm‑to‑table',
+    accommodation: 'Luxury glamping and high‑end lodges',
   },
   {
     id: 12,
-    name: 'Bali',
-    region: 'Asia-Pacific',
+    name: 'California: Big Sur & Monterey',
+    region: 'USA - West',
     image: '/french-riviera.jpg',
     rating: 4.86,
     duration: '6-9 days',
-    description: 'Tropical island blending spirituality, culture, and beach luxury. Experience Balinese temples, terraced rice paddies, world-class spas, and world-class beaches with boutique villas and exclusive resorts.',
-    highlights: ['Temple Stays', 'Rice Terraces', 'Spa Retreats', 'Beach Clubs', 'Yoga & Wellness', 'Local Markets'],
-    bestFor: ['Wellness seekers', 'Spiritual explorers', 'Couples', 'Families'],
-    climate: 'Tropical, 26-30°C year-round',
-    cuisine: 'Balinese, Indonesian, International fusion',
-    accommodation: 'Luxury villas and boutique wellness resorts',
+    description: 'Dramatic coastline, redwood forests, and artistic communities. Drive Highway 1, visit the Monterey Bay Aquarium, hike in Pfeiffer Big Sur State Park, and stay in cliffside inns with ocean views.',
+    highlights: ['Pacific Coast Highway', 'Monterey Aquarium', 'Redwood Hikes', 'Cliffside Inns', 'Art Galleries', 'Whale Watching'],
+    bestFor: ['Romantic getaways', 'Art lovers', 'Nature seekers', 'Couples'],
+    climate: 'Mediterranean, 10-25°C',
+    cuisine: 'Seafood, farm‑to‑table, wine country',
+    accommodation: 'Luxury inns and ocean‑view resorts',
   },
 ]
 
@@ -220,10 +220,10 @@ export default function DestinationsPage() {
 
       {/* Hero */}
       <AnimatedHero
-        badge="EXPLORE WORLD-CLASS DESTINATIONS"
+        badge="EXPLORE AMERICA'S FINEST DESTINATIONS"
         title="Luxury Destinations"
-        subtitle="around the globe"
-        description={`Discover ${allDestinations.length}+ of the world's most exclusive and coveted travel destinations. Each carefully curated for its unique offerings, cultural richness, and unparalleled luxury experiences.`}
+        subtitle="across the USA"
+        description={`Discover ${allDestinations.length}+ of the most exclusive and coveted travel destinations in the United States. Each carefully curated for its unique offerings, cultural richness, and unparalleled luxury experiences.`}
         backgroundGradient="bg-gradient-to-br from-gray-900 via-amber-900 to-gray-900"
         primaryCTA={{
           text: 'Start Planning',
@@ -235,7 +235,7 @@ export default function DestinationsPage() {
         }}
         showTrustIndicators={true}
         trustStats={[
-          { value: '50+', label: 'Global Destinations' },
+          { value: '50+', label: 'USA Destinations' },
           { value: '10K+', label: 'Happy Travelers' },
           { value: '98%', label: 'Satisfaction Rate' },
         ]}
@@ -275,7 +275,7 @@ export default function DestinationsPage() {
                     <p className="text-gray-600 leading-relaxed text-lg mb-6">{dest.description}</p>
                   </div>
 
-                  {/* Practical Info – climate moved to where the price section was (second column) */}
+                  {/* Practical Info */}
                   <div className="grid grid-cols-2 gap-4 mb-8 pb-8 border-b border-gray-200">
                     <div className="animate-fade-in-up" style={{ animationDelay: '100ms' }}>
                       <p className="text-xs text-gray-500 uppercase font-bold mb-2">Duration</p>
@@ -331,7 +331,7 @@ export default function DestinationsPage() {
                     </div>
                   </div>
 
-                  {/* CTA - removed price */}
+                  {/* CTA */}
                   <button
                     onClick={() => handleBooking(dest.name)}
                     className="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-600 transition-all duration-300 inline-flex items-center gap-2 hover:shadow-lg hover:scale-105 group"
@@ -366,8 +366,8 @@ export default function DestinationsPage() {
       {/* CTA */}
       <section className="py-16 px-6 bg-amber-600 text-white">
         <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
-          <h2 className="text-4xl font-serif font-bold mb-4">Ready to Explore?</h2>
-          <p className="text-lg mb-8 opacity-90">Connect with our luxury travel consultants to plan your perfect destination getaway.</p>
+          <h2 className="text-4xl font-serif font-bold mb-4">Ready to Explore America?</h2>
+          <p className="text-lg mb-8 opacity-90">Connect with our luxury travel consultants to plan your perfect USA getaway.</p>
           <Link
             href="/contact"
             className="inline-block bg-white text-amber-600 px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all duration-300 hover:shadow-2xl hover:scale-105"
@@ -377,7 +377,7 @@ export default function DestinationsPage() {
         </div>
       </section>
 
-      {/* Footer – now includes a Company section with FAQ link and the exact contact details you asked for */}
+      {/* Footer */}
       <footer className="bg-gray-900 text-white py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
@@ -388,17 +388,17 @@ export default function DestinationsPage() {
             <div className="animate-fade-in-up" style={{ animationDelay: '50ms' }}>
               <h4 className="font-semibold mb-4 text-white">Discover</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><Link href="/destinations" className="hover:text-amber-500 transition-colors">Destinations</Link></li>
-                <li><Link href="/experiences" className="hover:text-amber-500 transition-colors">Experiences</Link></li>
-                <li><Link href="/services" className="hover:text-amber-500 transition-colors">Services</Link></li>
+                <li><Link href="/destinations" className="hover:text-amber-500 transition-colors duration-300">Destinations</Link></li>
+                <li><Link href="/experiences" className="hover:text-amber-500 transition-colors duration-300">Experiences</Link></li>
+                <li><Link href="/about" className="hover:text-amber-500 transition-colors duration-300">About Us</Link></li>
               </ul>
             </div>
             <div className="animate-fade-in-up" style={{ animationDelay: '100ms' }}>
-              <h4 className="font-semibold mb-4 text-white">Company</h4>
+              <h4 className="font-semibold mb-4 text-white">Services</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><Link href="/about" className="hover:text-amber-500 transition-colors">About Us</Link></li>
-                <li><Link href="/faq" className="hover:text-amber-500 transition-colors">FAQ</Link></li>
-                <li><Link href="/contact" className="hover:text-amber-500 transition-colors">Contact</Link></li>
+                <li><Link href="/services" className="hover:text-amber-500 transition-colors duration-300">Luxury Tours</Link></li>
+                <li><Link href="/services" className="hover:text-amber-500 transition-colors duration-300">Private Jets</Link></li>
+                <li><Link href="/services" className="hover:text-amber-500 transition-colors duration-300">Yacht Charters</Link></li>
               </ul>
             </div>
             <div className="animate-fade-in-up" style={{ animationDelay: '150ms' }}>

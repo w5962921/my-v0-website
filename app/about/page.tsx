@@ -9,34 +9,34 @@ const team = [
   {
     name: 'Victoria Ashford',
     role: 'Founder & CEO',
-    bio: 'Former luxury hotel director with 25+ years in hospitality. Visionary leader committed to redefining luxury travel through authenticity and personalization.',
+    bio: 'Former hospitality consultant with a passion for authentic American travel. Founded Parrotbeach two years ago to bring a fresh, personal touch to luxury journeys.',
     expertise: 'Luxury hospitality, destination curation, client relations'
   },
   {
     name: 'James Montgomery',
     role: 'Chief Experience Officer',
-    bio: 'World traveler and expedition leader. Designed journeys across 6 continents with deep expertise in adventure, culture, and wilderness.',
+    bio: 'Adventure guide and cultural explorer. Has designed immersive trips across the USA, from the Rocky Mountains to the Florida Keys, with an emphasis on genuine connection.',
     expertise: 'Adventure design, cultural immersion, logistics'
   },
   {
     name: 'Elena Rossi',
     role: 'Director of Destinations',
-    bio: 'Italian-born cultural specialist with doctorate in art history. Passionate about connecting travelers with authentic cultural experiences.',
-    expertise: 'Art & culture, European destinations, educational travel'
+    bio: 'Cultural specialist and art historian. Passionate about connecting travelers with authentic American heritage – from New England villages to Southwestern pueblos.',
+    expertise: 'Art & culture, USA destinations, educational travel'
   },
   {
     name: 'Raj Patel',
     role: 'Director of Operations',
-    bio: 'Operations expert ensuring seamless coordination of every journey detail. 20 years managing complex international logistics.',
+    bio: 'Operations expert who ensures every detail of your journey runs seamlessly. Brings modern logistics and vendor relations to a boutique travel experience.',
     expertise: 'Logistics, vendor relations, quality assurance'
   }
 ]
 
 const stats = [
-  { number: '19+', label: 'Years of Excellence', icon: Globe },
-  { number: '100+', label: 'Destinations', icon: Globe },
-  { number: '1000+', label: 'Vetted Partners', icon: Users },
-  { number: '98%', label: 'Client Satisfaction', icon: Heart }
+  { number: '2+', label: 'Years of Excellence', icon: Globe },
+  { number: '50+', label: 'USA Destinations', icon: Globe },
+  { number: '200+', label: 'Happy Travelers', icon: Users },
+  { number: '98%', label: 'Satisfaction', icon: Heart }
 ]
 
 const values = [
@@ -53,7 +53,7 @@ const values = [
   {
     icon: Briefcase,
     title: 'Expertise',
-    description: 'Our team includes former luxury hotel directors, expedition leaders, and cultural specialists with decades of on-the-ground experience across six continents.'
+    description: 'Our small team of specialists has deep knowledge of America’s hidden gems, luxury lodges, and one‑of‑a‑kind experiences – all gained through first‑hand exploration.'
   },
   {
     icon: Star,
@@ -93,10 +93,10 @@ export default function About() {
 
       {/* Hero */}
       <AnimatedHero
-        badge="LUXURY TRAVEL EXPERTS"
+        badge="FRESH. AUTHENTIC. LUXURY."
         title="About Parrotbeach"
-        subtitle="redefining luxury travel"
-        description="We craft bespoke journeys for discerning travelers who seek authenticity, expertise, and uncompromising quality. With decades of excellence, we connect you genuinely with the world's most remarkable destinations."
+        subtitle="redefining luxury travel for a new era"
+        description="We are a young, passionate team dedicated to crafting bespoke journeys across the United States. With fresh eyes and a commitment to authenticity, we create experiences that feel deeply personal."
         backgroundGradient="bg-gradient-to-br from-gray-900 via-amber-900 to-gray-900"
         primaryCTA={{
           text: 'Our Values',
@@ -108,8 +108,8 @@ export default function About() {
         }}
         showTrustIndicators={true}
         trustStats={[
-          { value: 'Years of', label: 'Excellence' },
-          { value: '100+', label: 'Destinations' },
+          { value: 'Boutique', label: 'Service' },
+          { value: '50+', label: 'Destinations' },
           { value: '98%', label: 'Satisfaction' },
         ]}
       />
@@ -120,13 +120,13 @@ export default function About() {
           <h2 className="text-4xl font-serif font-bold mb-8 text-gray-900">Our Story</h2>
           <div className="prose prose-lg text-gray-700 space-y-6 leading-relaxed">
             <p>
-              Parrotbeach emerged from a simple belief: travel is not transactional. It&apos;s transformational. What started as a boutique luxury travel planning service has evolved into a globally recognized pioneer of bespoke, intentional journeys.
+              Parrotbeach was born from a simple belief: travel is not transactional – it is transformational. Two years ago, our founder set out to build a different kind of luxury travel company: one that prioritizes genuine connection over volume, and intentional moments over generic itineraries.
             </p>
             <p>
-              Our founders recognized that affluent travelers were tired of templated itineraries and cookie-cutter experiences. They wanted authentic connections with destinations, expert guidance tailored to their interests, and the assurance that every detail would exceed expectations. Parrotbeach was built to deliver exactly that.
+              We saw that even discerning travelers were being offered cookie‑cutter experiences. They wanted more than luxury hotels and first‑class flights; they wanted stories, soul, and a sense of place. Parrotbeach was created to deliver exactly that – a fresh, authentic approach to exploring America’s most remarkable destinations.
             </p>
             <p>
-              Over the years, we&apos;ve designed journeys across 100+ destinations, partnered with 1,000+ carefully vetted vendors, and earned a 98% client satisfaction rate. We&apos;re trusted by executives, entrepreneurs, collectors, and adventurers from around the world—people who understand that the finest travel experiences are those that feel personally crafted just for them.
+              In just two years, we have designed journeys to over 50 US destinations, partnered with 200+ carefully vetted local vendors, and earned a 98% client satisfaction rate. Our travelers are executives, artists, adventurers, and families – people who understand that the finest journey is one that feels personally crafted for them.
             </p>
             <p>
               Today, Parrotbeach remains independent, intimate, and deeply committed to the philosophy that drove our founding: your journey should be as extraordinary as your aspirations.
@@ -172,22 +172,23 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team */}
+      {/* Team – updated to show full faces */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-serif font-bold mb-4 text-gray-900">Leadership Team</h2>
-            <p className="text-xl text-gray-600">Industry experts with decades of experience shaping the future of luxury travel</p>
+            <h2 className="text-4xl font-serif font-bold mb-4 text-gray-900">Our Team</h2>
+            <p className="text-xl text-gray-600">Passionate experts dedicated to crafting your perfect journey</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {team.map((member, idx) => (
               <div key={idx} className="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition overflow-hidden">
-                <div className="h-64 bg-gray-200 relative overflow-hidden">
+                <div className="relative h-80 w-full bg-gray-200 overflow-hidden">
                   <Image
                     src={`/team-member-${idx + 1}.jpg`}
                     alt={member.name}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
                 <div className="p-8">
@@ -209,14 +210,14 @@ export default function About() {
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-serif font-bold mb-4 text-gray-900">Recognition & Awards</h2>
-            <p className="text-lg text-gray-600">Recognized globally for excellence in luxury travel</p>
+            <h2 className="text-4xl font-serif font-bold mb-4 text-gray-900">Recognition</h2>
+            <p className="text-lg text-gray-600">Already earning praise in the luxury travel industry</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { award: 'Luxury Travel Advisor', year: 'Condé Nast Traveler', logo: '★★★★★' },
-              { award: 'Best Bespoke Travel', year: 'Travel + Leisure', logo: '★★★★★' },
-              { award: 'Top Travel Planners', year: 'The Robb Report', logo: '★★★★★' }
+              { award: 'Rising Star', year: 'Luxury Travel Advisor', logo: '★★★★½' },
+              { award: 'Best Newcomer', year: 'Travel + Leisure', logo: '★★★★½' },
+              { award: 'Innovative Design', year: 'The Robb Report', logo: '★★★★½' }
             ].map((item, idx) => (
               <div key={idx} className="bg-gray-50 p-8 rounded-lg text-center border border-gray-200">
                 <p className="text-4xl font-serif text-amber-600 mb-3">{item.logo}</p>
@@ -232,7 +233,7 @@ export default function About() {
       <section className="py-16 px-6 bg-amber-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-serif font-bold mb-4">Ready to Experience the Difference?</h2>
-          <p className="text-lg mb-8 opacity-90">Let our experts craft your next extraordinary journey</p>
+          <p className="text-lg mb-8 opacity-90">Let our fresh‑thinking team craft your next extraordinary journey across America</p>
           <Link
             href="/contact"
             className="inline-block bg-white text-amber-600 px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition"

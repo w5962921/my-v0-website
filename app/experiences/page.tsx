@@ -2,112 +2,112 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { MapPin, Users2, Star, ArrowRight, Briefcase, Heart } from 'lucide-react'
+import { MapPin, Star, ArrowRight } from 'lucide-react'
 import AnimatedHero from '@/components/animated-hero'
 
 const experiences = [
   {
     id: 1,
     category: 'Maritime',
-    name: 'Superyacht Mediterranean Charter',
-    location: 'Greek Islands, Italy, France',
+    name: 'Superyacht Florida Keys & Bahamas',
+    location: 'Florida Keys, Miami, Bahamas',
     duration: '7-14 days',
     capacity: '2-12 guests',
     image: '/luxury-yacht.jpg',
     rating: 4.98,
-    description: 'Experience unparalleled luxury aboard a private superyacht. Navigate crystal-clear waters between exclusive Mediterranean destinations. Enjoy gourmet dining prepared by private chefs, water sports activities, and sunset aperitifs on the open deck.',
-    inclusions: ['Crewed Superyacht', 'Gourmet Dining', 'Water Sports', 'Tender Boat Excursions', 'Michelin-Starred Shore Dinners', 'Premium Wines & Spirits'],
+    description: 'Experience unparalleled luxury aboard a private superyacht cruising the crystal‑clear waters of Florida and the Bahamas. Enjoy gourmet dining prepared by private chefs, water sports, and sunset aperitifs on the open deck.',
+    inclusions: ['Crewed Superyacht', 'Gourmet Dining', 'Water Sports', 'Tender Excursions', 'Michelin‑Starred Shore Dinners', 'Premium Wines'],
     bestFor: ['Couples seeking romance', 'Family celebrations', 'Friend groups', 'Corporate retreats'],
   },
   {
     id: 2,
     category: 'Aviation',
-    name: 'Global Private Jet Experience',
-    location: 'Worldwide',
+    name: 'Private Jet Across the USA',
+    location: 'Any US destination',
     duration: 'Custom',
     capacity: '2-8 passengers',
     image: '/private-jet.jpg',
     rating: 4.96,
-    description: 'Skip commercial aviation entirely. Our curated private jet service offers unmatched flexibility, privacy, and comfort. Customize your itinerary with seamless point-to-point travel. Direct access to over 5,000 airfields globally, including remote destinations.',
-    inclusions: ['Ultra-Long Range Aircraft', 'Premium Catering', 'Flexible Scheduling', 'Concierge Planning', 'Ground Transportation', 'VIP Terminal Access'],
-    bestFor: ['Time-conscious executives', 'Multi-destination tours', 'Remote expeditions', 'Private events'],
+    description: 'Skip commercial aviation entirely. Fly privately to any of 5,000+ US airfields, from New York to Napa, Aspen to the Florida Keys. Customize your itinerary with seamless point‑to‑point travel.',
+    inclusions: ['Ultra‑Long Range Aircraft', 'Premium Catering', 'Flexible Scheduling', 'Concierge Planning', 'Ground Transportation', 'VIP Terminal Access'],
+    bestFor: ['Time‑conscious executives', 'Multi‑city tours', 'Remote expeditions', 'Private events'],
   },
   {
     id: 3,
     category: 'Wellness',
-    name: 'Luxury Spa & Wellness Retreat',
-    location: 'Switzerland, Costa Rica, Bali',
+    name: 'Luxury Spa & Wellness Retreat – California',
+    location: 'California (Big Sur, Sonoma, Santa Barbara)',
     duration: '5-10 days',
     capacity: '2-20 guests',
     image: '/luxury-spa.jpg',
     rating: 4.94,
-    description: 'Rejuvenate at world-class wellness sanctuaries. Combine holistic spa treatments with fitness, yoga, meditation, and personalized nutrition programs. Access to renowned wellness experts and transformative experiences.',
+    description: 'Rejuvenate at world‑class wellness sanctuaries on the California coast. Combine holistic spa treatments with fitness, yoga, meditation, and personalized nutrition programs.',
     inclusions: ['Luxury Accommodation', 'Daily Spa Services', 'Yoga & Meditation Classes', 'Wellness Consultations', 'Gourmet Healthy Cuisine', 'Fitness Programs'],
-    bestFor: ['Wellness enthusiasts', 'Stress relief seekers', 'Health-conscious travelers', 'Group rejuvenation'],
+    bestFor: ['Wellness enthusiasts', 'Stress relief seekers', 'Health‑conscious travelers', 'Group rejuvenation'],
   },
   {
     id: 4,
     category: 'Culinary',
-    name: 'Michelin Star Culinary Journey',
-    location: 'France, Italy, Spain, Japan',
+    name: 'Michelin Star Culinary Journey – USA',
+    location: 'Napa Valley, Chicago, New York, Charleston',
     duration: '5-8 days',
     capacity: '2-8 guests',
     image: '/wine-tasting.jpg',
     rating: 4.97,
-    description: 'Embark on an exclusive culinary adventure through the world\'s most celebrated food destinations. Dine at Michelin-starred restaurants, visit renowned chefs, tour vineyards, and participate in exclusive cooking classes.',
-    inclusions: ['5-8 Michelin-Starred Dinners', 'Wine Pairings', 'Chef Meetings', 'Vineyard Tours', 'Cooking Classes', 'Food Market Explorations'],
+    description: 'Embark on an exclusive culinary adventure through America’s most celebrated food destinations. Dine at Michelin‑starred restaurants, meet renowned chefs, tour vineyards, and participate in exclusive cooking classes.',
+    inclusions: ['5‑8 Michelin‑Starred Dinners', 'Wine Pairings', 'Chef Meetings', 'Vineyard Tours', 'Cooking Classes', 'Food Market Explorations'],
     bestFor: ['Food & wine connoisseurs', 'Culinary enthusiasts', 'Celebration dinners', 'Cultural foodies'],
   },
   {
     id: 5,
     category: 'Adventure',
-    name: 'Extreme Expedition Adventure',
-    location: 'Himalayas, Patagonia, Kilimanjaro',
+    name: 'Extreme Expedition – Alaska & Rockies',
+    location: 'Alaska, Montana, Colorado, Utah',
     duration: '7-14 days',
     capacity: '4-12 guests',
     image: '/adventure-hiking.jpg',
     rating: 4.95,
-    description: 'Push your limits with professionally guided expeditions to Earth\'s most challenging and breathtaking destinations. Summit peaks, trek through pristine wilderness, and camp under star-filled skies with expert mountaineers.',
-    inclusions: ['Expert Mountain Guides', 'Premium Camping Equipment', 'Luxury Base Camps', 'Altitude Support Team', 'Photography Services', 'Emergency Medical Support'],
+    description: 'Push your limits with professionally guided expeditions to America’s most challenging and breathtaking landscapes. Summit peaks, trek through pristine wilderness, and camp under star‑filled skies.',
+    inclusions: ['Expert Mountain Guides', 'Premium Camping Equipment', 'Luxury Base Camps', 'Altitude Support', 'Photography Services', 'Emergency Support'],
     bestFor: ['Adventure seekers', 'Mountain climbers', 'Photography enthusiasts', 'Experienced trekkers'],
   },
   {
     id: 6,
     category: 'Cultural',
-    name: 'Cultural Heritage & Art Discovery',
-    location: 'Egypt, Greece, Peru, Italy',
+    name: 'Cultural Heritage & Art Discovery – USA',
+    location: 'New York, Chicago, Santa Fe, Charleston',
     duration: '8-12 days',
     capacity: '2-12 guests',
     image: '/cultural-tour.jpg',
     rating: 4.93,
-    description: 'Dive deep into world history and art. Private museum access, exclusive archaeological site tours, meetings with historians and artists, and immersive cultural experiences designed for discerning travelers.',
+    description: 'Dive deep into American history and art. Private museum access (MoMA, Art Institute of Chicago), exclusive archaeological site tours, meetings with historians and artists, and immersive cultural experiences.',
     inclusions: ['Private Museum Tours', 'Exclusive Site Access', 'Expert Historians', 'Artist Meetings', 'Luxury Accommodation', 'Gourmet Dining'],
     bestFor: ['History buffs', 'Art collectors', 'Cultural enthusiasts', 'Educational travelers'],
   },
   {
     id: 7,
     category: 'Safari',
-    name: 'African Wildlife Safari Expedition',
-    location: 'Kenya, Tanzania, South Africa',
+    name: 'American Wildlife Safari',
+    location: 'Yellowstone, Grand Teton, Alaska',
     duration: '6-10 days',
     capacity: '2-8 guests',
     image: '/kenya-safari.jpg',
     rating: 4.94,
-    description: 'Experience Africa\'s greatest wildlife from intimate luxury safari lodges. Expert trackers guide private game drives at dawn and dusk. Witness the great migration, encounter the Big Five, and connect with Maasai communities.',
-    inclusions: ['Luxury Safari Lodge', 'Expert Guides', 'Private Game Drives', 'Maasai Village Visits', 'Photography Support', 'Bush Dinners'],
+    description: 'Experience America’s greatest wildlife from intimate luxury lodges. Expert trackers guide private game drives at dawn and dusk. See bison, elk, bears, wolves, and bald eagles in their natural habitat.',
+    inclusions: ['Luxury Safari Lodge', 'Expert Guides', 'Private Game Drives', 'Native American Cultural Visits', 'Photography Support', 'Bush Dinners'],
     bestFor: ['Wildlife photographers', 'Nature lovers', 'Adventure families', 'Conservation enthusiasts'],
   },
   {
     id: 8,
     category: 'Luxury',
-    name: 'Private Island Resort Escape',
-    location: 'Maldives, Caribbean, Polynesia',
+    name: 'Private Island Resort Escape – Florida Keys',
+    location: 'Florida Keys, Gulf Coast',
     duration: '5-7 days',
     capacity: '2-4 guests',
     image: '/maldives.jpg',
     rating: 4.99,
-    description: 'Exclusive access to private island resorts with overwater bungalows, pristine beaches, and turquoise lagoons. Personalized service, water activities, and romantic settings perfect for honeymoons and anniversaries.',
-    inclusions: ['Private Overwater Villa', 'All-Inclusive Dining', 'Water Sports', 'Private Spa', 'Beach Picnics', 'Sunset Cruises'],
+    description: 'Exclusive access to private island resorts with overwater bungalows (in the Keys), pristine beaches, and turquoise lagoons. Personalized service, water activities, and romantic settings perfect for honeymoons.',
+    inclusions: ['Private Overwater Villa', 'All‑Inclusive Dining', 'Water Sports', 'Private Spa', 'Beach Picnics', 'Sunset Cruises'],
     bestFor: ['Honeymooners', 'Romantic getaways', 'Anniversaries', 'Exclusive couples'],
   },
 ]
@@ -126,19 +126,19 @@ export default function ExperiencesPage() {
             Parrotbeach
           </Link>
           <div className="hidden md:flex gap-8 items-center">
-            <Link href="/destinations" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition">
+            <Link href="/destinations" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition-colors duration-300">
               Destinations
             </Link>
             <Link href="/experiences" className="text-sm font-medium text-amber-600">
               Experiences
             </Link>
-            <Link href="/services" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition">
+            <Link href="/services" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition-colors duration-300">
               Services
             </Link>
-            <Link href="/about" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition">
+            <Link href="/about" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition-colors duration-300">
               About
             </Link>
-            <Link href="/contact" className="text-sm bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition font-medium">
+            <Link href="/contact" className="text-sm bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition-all duration-300 font-medium hover:shadow-lg">
               Inquire
             </Link>
           </div>
@@ -147,7 +147,7 @@ export default function ExperiencesPage() {
 
       {/* Hero */}
       <AnimatedHero
-        badge="CURATED WORLD-CLASS EXPERIENCES"
+        badge="CURATED USA LUXURY EXPERIENCES"
         title="Unforgettable"
         subtitle="moments await"
         description="From maritime adventures and private aviation to wellness retreats and cultural immersion, our curated experiences are meticulously planned and expertly executed for discerning travelers."
@@ -169,7 +169,7 @@ export default function ExperiencesPage() {
       />
 
       {/* Experiences Grid */}
-      <section className="py-20 px-6">
+      <section id="experiences" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {experiences.map((exp) => (
@@ -199,7 +199,7 @@ export default function ExperiencesPage() {
 
                   <p className="text-gray-600 leading-relaxed mb-6">{exp.description}</p>
 
-                  {/* Details Grid – Price row removed (now only Duration and Capacity) */}
+                  {/* Details Grid – no price */}
                   <div className="grid grid-cols-2 gap-4 mb-6 pb-6 border-b border-gray-200">
                     <div>
                       <p className="text-xs text-gray-500 uppercase font-semibold mb-1">Duration</p>
@@ -252,7 +252,7 @@ export default function ExperiencesPage() {
       {/* CTA */}
       <section className="py-16 px-6 bg-amber-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-serif font-bold mb-4">Customize Your Perfect Experience</h2>
+          <h2 className="text-4xl font-serif font-bold mb-4">Customize Your Perfect US Experience</h2>
           <p className="text-lg mb-8 opacity-90">Can&apos;t find exactly what you&apos;re looking for? Our experts can create a bespoke experience tailored to your vision.</p>
           <Link
             href="/contact"
@@ -263,7 +263,7 @@ export default function ExperiencesPage() {
         </div>
       </section>
 
-      {/* Footer – Updated with Company column and your contact details */}
+      {/* Footer (same as before) */}
       <footer className="bg-gray-900 text-white py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
