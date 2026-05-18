@@ -117,6 +117,8 @@ function ContactContent() {
                 <p className="text-gray-500 text-sm mt-3">Mobile (24/7)</p>
                 <a href="tel:+19737299335" className="text-amber-600 hover:text-amber-700 transition font-semibold text-lg block mt-1">973-729-9335</a>
                 <p className="text-gray-500 text-sm mt-1">Landline</p>
+                  <a href="tel:+19737299335" className="text-amber-600 hover:text-amber-700 transition font-semibold text-lg block mt-1">407-821-8177</a>
+                <p className="text-gray-500 text-sm mt-1">Landline</p>
               </div>
               <div className="border border-gray-200 rounded-lg p-8 hover:shadow-lg transition">
                 <div className="flex items-center gap-3 mb-4">
@@ -263,7 +265,8 @@ function ContactContent() {
             <div><h3 className="font-serif font-bold text-amber-500 text-lg mb-4">Parrotbeach</h3><p className="text-gray-400 text-sm">Luxury travel experiences for discerning travelers.</p></div>
             <div><h4 className="font-semibold mb-4 text-white">Discover</h4><ul className="space-y-2 text-gray-400 text-sm"><li><Link href="/destinations">Destinations</Link></li><li><Link href="/experiences">Experiences</Link></li><li><Link href="/services">Services</Link></li></ul></div>
             <div><h4 className="font-semibold mb-4 text-white">Company</h4><ul className="space-y-2 text-gray-400 text-sm"><li><Link href="/about">About Us</Link></li><li><Link href="/faq">FAQ</Link></li><li><Link href="/contact">Contact</Link></li></ul></div>
-            <div><h4 className="font-semibold mb-4 text-white">Contact</h4><p className="text-gray-400 text-sm">Gary Seitz</p><p className="text-gray-400 text-sm">13 Green Apple Ct</p><p className="text-gray-400 text-sm">Sparta, NJ 07871</p><p className="text-amber-500 font-semibold mt-2">Mobile: 973-687-0899</p><p className="text-amber-500 font-semibold">Landline: 973-729-9335</p><p className="text-gray-400 text-sm mt-2">T. Lee Productions</p></div>
+            <div><h4 className="font-semibold mb-4 text-white">Contact</h4><p className="text-gray-400 text-sm">Gary Seitz</p><p className="text-gray-400 text-sm">13 Green Apple Ct</p><p className="text-gray-400 text-sm">Sparta, NJ 07871</p><p className="text-amber-500 font-semibold mt-2">Mobile: 973-687-0899</p><p className="text-amber-500 font-semibold">Landline: 973-729-9335</p>              <p className="text-amber-500 font-semibold">Landline: 407-821-8177</p>
+<p className="text-gray-400 text-sm mt-2">T. Lee Productions</p></div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">&copy; 2026 Parrotbeach. All rights reserved.</div>
         </div>
