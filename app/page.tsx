@@ -440,13 +440,13 @@ export default function Home() {
               <p className="text-gray-400 text-sm">Sparta, NJ 07871</p>
               <p className="text-amber-500 font-semibold mt-2">Mobile: 973-687-0899</p>
               <p className="text-amber-500 font-semibold">Landline: 973-729-9335</p>
-                            <p className="text-amber-500 font-semibold">Landline: 407-821-8177</p>
+                            <p className="text-amber-500 font-semibold">Mobile: 407-821-8177</p>
 
               <p className="text-gray-400 text-sm mt-2">T. Lee Productions</p>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2026 Parrotbeach. All rights reserved.</p>
+            <p>&copy; 2024 Parrotbeach. All rights reserved.</p>
           </div>
         </div>
       </footer>
