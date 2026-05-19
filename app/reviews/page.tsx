@@ -415,7 +415,7 @@ export default function ReviewsPage() {
         </div>
       </section>
 
-      {/* Footer */}
+{/* Footer */}
       <footer className="bg-gray-900 text-white py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
@@ -427,8 +427,8 @@ export default function ReviewsPage() {
               <h4 className="font-semibold mb-4 text-white">Discover</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li><Link href="/destinations" className="hover:text-amber-500 transition">Destinations</Link></li>
-                <li><Link href="/experiences" className="hover:text-amber-500 transition">Experiences</Link></li>
                 <li><Link href="/services" className="hover:text-amber-500 transition">Services</Link></li>
+                <li><Link href="/reviews" className="hover:text-amber-500 transition">Reviews</Link></li>
               </ul>
             </div>
             <div>
@@ -437,6 +437,7 @@ export default function ReviewsPage() {
                 <li><Link href="/about" className="hover:text-amber-500 transition">About Us</Link></li>
                 <li><Link href="/faq" className="hover:text-amber-500 transition">FAQ</Link></li>
                 <li><Link href="/contact" className="hover:text-amber-500 transition">Contact</Link></li>
+                <li><Link href="/privacy" className="hover:text-amber-500 transition">Privacy Policy</Link></li>
               </ul>
             </div>
             <div>
@@ -446,8 +447,7 @@ export default function ReviewsPage() {
               <p className="text-gray-400 text-sm">Sparta, NJ 07871</p>
               <p className="text-amber-500 font-semibold mt-2">Mobile: 973-687-0899</p>
               <p className="text-amber-500 font-semibold">Landline: 973-729-9335</p>
-                            <p className="text-amber-500 font-semibold">Mobile: 407-821-8177</p>
-
+              <p className="text-amber-500 font-semibold">Mobile: 407-821-8177</p>
               <p className="text-gray-400 text-sm mt-2">T. Lee Productions</p>
             </div>
           </div>

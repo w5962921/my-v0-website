@@ -265,6 +265,7 @@ export default function About() {
                 <li><Link href="/about" className="hover:text-amber-500 transition">About Us</Link></li>
                 <li><Link href="/faq" className="hover:text-amber-500 transition">FAQ</Link></li>
                 <li><Link href="/contact" className="hover:text-amber-500 transition">Contact</Link></li>
+                <li><Link href="/privacy" className="hover:text-amber-500 transition">Privacy Policy</Link></li>
               </ul>
             </div>
             <div>
