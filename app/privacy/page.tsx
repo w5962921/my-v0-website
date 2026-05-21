@@ -10,7 +10,7 @@ export default function PrivacyPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-serif font-bold text-amber-600">
-            Parrotbeach
+            PARROTBEACH
           </Link>
           <div className="hidden md:flex gap-8 items-center">
             <Link href="/destinations" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition">Destinations</Link>
@@ -96,7 +96,7 @@ export default function PrivacyPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
-              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">Parrotbeach</h3>
+              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">PARROTBEACH</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Luxury travel experiences for discerning travelers.</p>
             </div>
             <div>
@@ -128,7 +128,7 @@ export default function PrivacyPage() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 Parrotbeach. All rights reserved.</p>
+            <p>&copy; 2024 PARROTBEACH. All rights reserved.</p>
           </div>
         </div>
       </footer>

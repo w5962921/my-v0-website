@@ -15,7 +15,7 @@ const reviews = [
     image: '/reviewer-1.jpg',
     rating: 5,
     date: '3 months ago',
-    text: 'Parrotbeach transformed our family safari into an extraordinary adventure. The attention to every detail, from the luxury lodges to the exclusive game drive experiences, was simply remarkable. Our children will remember this forever.',
+    text: 'PARROTBEACH transformed our family safari into an extraordinary adventure. The attention to every detail, from the luxury lodges to the exclusive game drive experiences, was simply remarkable. Our children will remember this forever.',
   },
   {
     id: 2,
@@ -95,7 +95,7 @@ const reviews = [
     image: '/reviewer-3.jpg',
     rating: 5,
     date: '2 weeks ago',
-    text: 'As someone in the hospitality industry, I can truly appreciate what Parrotbeach does. Their network is extraordinary, their service is impeccable, and their luxury standards are uncompromising.',
+    text: 'As someone in the hospitality industry, I can truly appreciate what PARROTBEACH does. Their network is extraordinary, their service is impeccable, and their luxury standards are uncompromising.',
   },
   {
     id: 10,
@@ -176,7 +176,7 @@ export default function ReviewsPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-serif font-bold text-amber-600">
-            Parrotbeach
+            PARROTBEACH
           </Link>
           <div className="hidden md:flex gap-8 items-center">
             <Link href="/destinations" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition">
@@ -297,7 +297,7 @@ export default function ReviewsPage() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-lg p-10">
             <h2 className="text-3xl font-serif font-bold text-gray-900 mb-4">Share Your Experience</h2>
-            <p className="text-gray-600 mb-8">Have you traveled with Parrotbeach? We&apos;d love to hear about your journey.</p>
+            <p className="text-gray-600 mb-8">Have you traveled with PARROTBEACH? We&apos;d love to hear about your journey.</p>
 
             {submitted && (
               <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
@@ -367,7 +367,7 @@ export default function ReviewsPage() {
                   name="review"
                   value={formData.review}
                   onChange={handleInputChange}
-                  placeholder="Share your experience with Parrotbeach. What made your journey special?"
+                  placeholder="Share your experience with PARROTBEACH. What made your journey special?"
                   rows={6}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-100 resize-none"
@@ -415,12 +415,12 @@ export default function ReviewsPage() {
         </div>
       </section>
 
-{/* Footer */}
+      {/* Footer */}
       <footer className="bg-gray-900 text-white py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
-              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">Parrotbeach</h3>
+              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">PARROTBEACH</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Luxury travel experiences for discerning travelers.</p>
             </div>
             <div>
@@ -452,7 +452,7 @@ export default function ReviewsPage() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 Parrotbeach. All rights reserved.</p>
+            <p>&copy; 2024 PARROTBEACH. All rights reserved.</p>
           </div>
         </div>
       </footer>

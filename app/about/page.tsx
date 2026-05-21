@@ -5,30 +5,14 @@ import Image from 'next/image'
 import { Award, Users, Globe, Heart, Star, Briefcase } from 'lucide-react'
 import AnimatedHero from '@/components/animated-hero'
 
+// Only CEO remains
 const team = [
   {
-    name: 'Victoria Ashford',
+    name: 'Gary Seitz',
     role: 'Founder & CEO',
-    bio: 'Former hospitality consultant with a passion for authentic American travel. Founded Parrotbeach two years ago to bring a fresh, personal touch to luxury journeys.',
-    expertise: 'Luxury hospitality, destination curation, client relations'
-  },
-  {
-    name: 'James Montgomery',
-    role: 'Chief Experience Officer',
-    bio: 'Adventure guide and cultural explorer. Has designed immersive trips across the USA, from the Rocky Mountains to the Florida Keys, with an emphasis on genuine connection.',
-    expertise: 'Adventure design, cultural immersion, logistics'
-  },
-  {
-    name: 'Elena Rossi',
-    role: 'Director of Destinations',
-    bio: 'Cultural specialist and art historian. Passionate about connecting travelers with authentic American heritage – from New England villages to Southwestern pueblos.',
-    expertise: 'Art & culture, USA destinations, educational travel'
-  },
-  {
-    name: 'Raj Patel',
-    role: 'Director of Operations',
-    bio: 'Operations expert who ensures every detail of your journey runs seamlessly. Brings modern logistics and vendor relations to a boutique travel experience.',
-    expertise: 'Logistics, vendor relations, quality assurance'
+    bio: 'Gary Seitz is the visionary behind PARROTBEACH. With deep roots in hospitality and a lifelong passion for discovering America’s hidden treasures, he built this company to offer travelers authentic, transformative journeys. Gary personally oversees every itinerary, ensuring each guest receives the highest level of care and expertise.',
+    expertise: 'Luxury travel, destination curation, client relationships',
+    // No image – we will not render any picture
   }
 ]
 
@@ -69,7 +53,7 @@ export default function About() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-serif font-bold text-amber-600">
-            Parrotbeach
+            PARROTBEACH
           </Link>
           <div className="hidden md:flex gap-8 items-center">
             <Link href="/destinations" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition">
@@ -94,7 +78,7 @@ export default function About() {
       {/* Hero */}
       <AnimatedHero
         badge="FRESH. AUTHENTIC. LUXURY."
-        title="About Parrotbeach"
+        title="About PARROTBEACH"
         subtitle="redefining luxury travel for a new era"
         description="We are a young, passionate team dedicated to crafting bespoke journeys across the United States. With fresh eyes and a commitment to authenticity, we create experiences that feel deeply personal."
         backgroundGradient="bg-gradient-to-br from-gray-900 via-amber-900 to-gray-900"
@@ -103,7 +87,7 @@ export default function About() {
           href: '#values',
         }}
         secondaryCTA={{
-          text: 'Meet the Team',
+          text: 'Meet the CEO',
           href: '#team',
         }}
         showTrustIndicators={true}
@@ -120,16 +104,16 @@ export default function About() {
           <h2 className="text-4xl font-serif font-bold mb-8 text-gray-900">Our Story</h2>
           <div className="prose prose-lg text-gray-700 space-y-6 leading-relaxed">
             <p>
-              Parrotbeach was born from a simple belief: travel is not transactional – it is transformational. Two years ago, our founder set out to build a different kind of luxury travel company: one that prioritizes genuine connection over volume, and intentional moments over generic itineraries.
+              PARROTBEACH was born from a simple belief: travel is not transactional – it is transformational. Two years ago, our founder set out to build a different kind of luxury travel company: one that prioritizes genuine connection over volume, and intentional moments over generic itineraries.
             </p>
             <p>
-              We saw that even discerning travelers were being offered cookie‑cutter experiences. They wanted more than luxury hotels and first‑class flights; they wanted stories, soul, and a sense of place. Parrotbeach was created to deliver exactly that – a fresh, authentic approach to exploring America’s most remarkable destinations.
+              We saw that even discerning travelers were being offered cookie‑cutter experiences. They wanted more than luxury hotels and first‑class flights; they wanted stories, soul, and a sense of place. PARROTBEACH was created to deliver exactly that – a fresh, authentic approach to exploring America’s most remarkable destinations.
             </p>
             <p>
               In just two years, we have designed journeys to over 50 US destinations, partnered with 200+ carefully vetted local vendors, and earned a 98% client satisfaction rate. Our travelers are executives, artists, adventurers, and families – people who understand that the finest journey is one that feels personally crafted for them.
             </p>
             <p>
-              Today, Parrotbeach remains independent, intimate, and deeply committed to the philosophy that drove our founding: your journey should be as extraordinary as your aspirations.
+              Today, PARROTBEACH remains independent, intimate, and deeply committed to the philosophy that drove our founding: your journey should be as extraordinary as your aspirations.
             </p>
           </div>
         </div>
@@ -154,7 +138,7 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="py-20 px-6">
+      <section id="values" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-serif font-bold mb-16 text-center text-gray-900">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -172,25 +156,17 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team – updated to show full faces */}
-      <section className="py-20 px-6 bg-gray-50">
+      {/* Team – only CEO, no picture */}
+      <section id="team" className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-serif font-bold mb-4 text-gray-900">Our Team</h2>
-            <p className="text-xl text-gray-600">Passionate experts dedicated to crafting your perfect journey</p>
+            <h2 className="text-4xl font-serif font-bold mb-4 text-gray-900">Meet the CEO</h2>
+            <p className="text-xl text-gray-600">Personal leadership, exceptional service</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="max-w-3xl mx-auto">
             {team.map((member, idx) => (
               <div key={idx} className="bg-white rounded-lg border border-gray-200 hover:shadow-lg transition overflow-hidden">
-                <div className="relative h-80 w-full bg-gray-200 overflow-hidden">
-                  <Image
-                    src={`/team-member-${idx + 1}.jpg`}
-                    alt={member.name}
-                    fill
-                    className="object-cover object-top"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
+                {/* No image placeholder */}
                 <div className="p-8">
                   <h3 className="text-2xl font-semibold text-gray-900 mb-1">{member.name}</h3>
                   <p className="text-amber-600 font-semibold mb-4">{member.role}</p>
@@ -198,6 +174,15 @@ export default function About() {
                   <div className="pt-4 border-t border-gray-200">
                     <p className="text-sm text-gray-500 font-medium">Expertise:</p>
                     <p className="text-sm text-gray-600">{member.expertise}</p>
+                    <div className="mt-4 text-sm text-gray-600">
+                      <p className="font-medium text-gray-700">Contact & Address:</p>
+                      <p>Gary Seitz</p>
+                      <p>13 Green Apple Ct</p>
+                      <p>Sparta, NJ 07871</p>
+                      <p>Mobile: 973-687-0899</p>
+                      <p>Landline: 973-729-9335</p>
+                      <p>Mobile: 407-821-8177</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -248,7 +233,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
-              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">Parrotbeach</h3>
+              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">PARROTBEACH</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Luxury travel experiences for discerning travelers.</p>
             </div>
             <div>
@@ -280,7 +265,7 @@ export default function About() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 Parrotbeach. All rights reserved.</p>
+            <p>&copy; 2024 PARROTBEACH. All rights reserved.</p>
           </div>
         </div>
       </footer>
