@@ -10,7 +10,7 @@ export default function PrivacyPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-serif font-bold text-amber-600">
-            PARROTBEACH
+            Parrotbeach
           </Link>
           <div className="hidden md:flex gap-8 items-center">
             <Link href="/destinations" className="text-sm font-medium text-gray-700 hover:text-amber-600 transition">Destinations</Link>
@@ -37,7 +37,7 @@ export default function PrivacyPage() {
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="prose prose-lg text-gray-700 space-y-8 leading-relaxed">
-            <p className="text-sm text-gray-500">Effective date: January 1, 2024</p>
+            <p className="text-sm text-gray-500">Effective date: May 23, 2025</p>
 
             <h2 className="text-2xl font-serif font-bold text-gray-900 mt-8 mb-4">1. Information We Collect</h2>
             <p>When you use our website or contact us, we may collect the following information:</p>
@@ -74,6 +74,20 @@ export default function PrivacyPage() {
             </ul>
             <p>To exercise any of these rights, please contact us at <a href="mailto:info@garyparrotbeach.com" className="text-amber-600 hover:underline">info@garyparrotbeach.com</a> or call <a href="tel:+19736870899" className="text-amber-600 hover:underline">973-687-0899</a>.</p>
 
+            {/* NEW: SMS Terms & Conditions Section */}
+            <h2 className="text-2xl font-serif font-bold text-amber-600 mt-8 mb-4">SMS Terms & Conditions (10DLC Compliance)</h2>
+            <p>By opting in to receive SMS messages from Parrotbeach, you agree to the following terms:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>Company Name:</strong> Parrotbeach (Gary Seitz / T. Lee Productions).</li>
+              <li><strong>Message Types:</strong> After opting in, you may receive SMS messages regarding appointment confirmations, travel reminders, follow‑ups, and special offers related to your inquiries or bookings.</li>
+              <li><strong>Message Frequency:</strong> Message frequency may vary. You may receive up to 5 messages per month.</li>
+              <li><strong>Opt‑Out (STOP):</strong> You can cancel the SMS service at any time. Just text “STOP” to our SMS number. After you send “STOP”, we will send you a confirmation message that you have been unsubscribed. You will no longer receive SMS messages from us. To rejoin, sign up again as you did the first time.</li>
+              <li><strong>Help (HELP):</strong> If you need assistance, reply with “HELP” to receive support instructions. You may also contact us directly at <a href="mailto:info@garyparrotbeach.com" className="text-amber-600 hover:underline">info@garyparrotbeach.com</a> or call <a href="tel:+19736870899" className="text-amber-600 hover:underline">973-687-0899</a>.</li>
+              <li><strong>Carrier Disclaimer:</strong> Carriers are not liable for delayed or undelivered messages.</li>
+              <li><strong>Message & Data Rates:</strong> As always, message and data rates may apply for any messages sent to you from us and to us from you. If you have questions about your text or data plan, please contact your wireless provider.</li>
+              <li><strong>Privacy:</strong> For information on how we collect and use your data, please read this Privacy Policy.</li>
+            </ul>
+
             <h2 className="text-2xl font-serif font-bold text-gray-900 mt-8 mb-4">7. Children’s Privacy</h2>
             <p>Our services are not directed to children under 18. We do not knowingly collect personal information from minors.</p>
 
@@ -96,7 +110,7 @@ export default function PrivacyPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
-              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">PARROTBEACH</h3>
+              <h3 className="font-serif font-bold text-amber-500 text-lg mb-4">Parrotbeach</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Luxury travel experiences for discerning travelers.</p>
             </div>
             <div>
@@ -113,7 +127,7 @@ export default function PrivacyPage() {
                 <li><Link href="/about" className="hover:text-amber-500 transition">About Us</Link></li>
                 <li><Link href="/faq" className="hover:text-amber-500 transition">FAQ</Link></li>
                 <li><Link href="/contact" className="hover:text-amber-500 transition">Contact</Link></li>
-                <li><Link href="/privacy" className="hover:text-amber-500 transition">Privacy Policy</Link></li>
+                <li><Link href="/privacy" className="hover:text-amber-500 transition">Privacy & SMS Terms</Link></li>
               </ul>
             </div>
             <div>
@@ -128,7 +142,7 @@ export default function PrivacyPage() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 PARROTBEACH. All rights reserved.</p>
+            <p>&copy; 2025 Parrotbeach. All rights reserved.</p>
           </div>
         </div>
       </footer>
